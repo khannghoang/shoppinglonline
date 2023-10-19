@@ -38,7 +38,7 @@ class CategoryDetail extends Component {
       borderRadius: "15px",
       margin: "10px 0",
       padding: "10px",
-      backgroundColor: "#6A7CE0",
+      backgroundColor: "rgb(118, 74, 188)",
       color: "white",
       border: "none",
       cursor: "pointer",
