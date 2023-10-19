@@ -35,7 +35,7 @@ class Product extends Component {
       }
     });
     const number={
-    backgroundColor:" #6A7CE0",
+    backgroundColor:" rgb(234,234,234)",
     }
     const full={
       borderRadius: "15px",
