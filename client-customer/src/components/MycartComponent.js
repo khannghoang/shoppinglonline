@@ -23,12 +23,33 @@ class Mycart extends Component {
         </tr>
       );
     });
+   
+    const full={
+      borderRadius: "15px",
+      borderTopRightRadius:"0px",
+      borderBottomRightRadius:"0px",
+      padding: "20px",
+      backgroundColor: "white",
+      width: "1060px",
+      margin: "0 auto",
+      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
+      marginTop:"20px",
+      height:"370px"
+    }
     const table={
-      marginLeft:"130px"
+      border:" 1px solid #fff",
+      marginLeft:"80px",
+      width:"900px",
+      fontSize:"20px",
+      marginBottom:"30px"
+      
+    }
+    const move={
+      marginLeft:"43%"
     }
     return (
-      <div className="align-centerr">
-        <h2 className="text-centerr">ITEM LIST</h2>
+      <div style={full} className="align-centerr">
+        <h2 style={move} className="text-centerr">ITEM LIST</h2>
         <table style={table} className="datatable" border="1">
           <tbody>
             <tr className="datatable">
