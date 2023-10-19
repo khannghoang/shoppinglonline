@@ -15,8 +15,8 @@ class Customer extends Component {
   render() {
 
 const button={
-  backgroundColor: '#6A7CE0',
-  color: 'white',
+  backgroundColor: 'rgb(234,234,234)',
+  color: 'rgb(92, 92, 93)',
   borderRadius: '0px',
   padding: '5px 10px 5px px',
   cursor: 'pointer',
@@ -86,22 +86,18 @@ const tableRow = {
   const headertable = {
       display:'flex',
       width:'1200px',
-      background:'#6A7CE0',
+      background:'rgb(234, 234, 234)',
       borderRadius:"5px",
       margin: '0 auto'
-
     }
   const colandrow ={
     padding:"10px",
     width:'200px',
-
   }
   const colorHeader ={
-    color : "white",
-    
+    color : "rgb(92, 92, 93)",   
   }
   const full ={
-    
     borderTopLeftRadius:"10px",
     borderTopRightRadius:"10px",
     padding: "10px",
