@@ -16,7 +16,7 @@ class Order extends Component {
 const headertable = {
   display:'flex',
   width:'1200px',
-  background:'#6A7CE0',
+  background:'rgb(234,234,234)',
   borderRadius:"5px",
   margin: '0 auto'
 
@@ -31,7 +31,7 @@ const colfordate ={
 }
 
 const colorHeader ={
-color : "white",
+color : "rgb(92, 92, 93)",
 
 }
 
