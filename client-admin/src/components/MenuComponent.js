@@ -8,7 +8,7 @@ static contextType = MyContext;
 render() {
 const menuStyle = {
 display: 'flex',
-backgroundColor: '#6A7CE0',
+backgroundColor: '#eaeaea',
 padding: '10px',
 listStyleType: 'none',
 width: '1400px', // make the menu have a fixed length
@@ -20,7 +20,7 @@ const removemark = {
 };
 const menuItemStyle = {
 marginRight: '20px',
-color: 'white', // change the text color to white
+color: '#5c5c5d', // change the text color to white
 textDecoration: 'none', // remove the underline of the links
 listStyleType: 'none', // remove the marker
 marginLeft:'20px'
