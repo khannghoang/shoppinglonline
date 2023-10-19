@@ -19,7 +19,7 @@ class Login extends Component {
       width: "300px",
       margin: "0 auto",
       boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop: "15%",
+      marginTop: "12%",
       };
       
       const inputStyle = {
@@ -46,9 +46,7 @@ class Login extends Component {
       textAlign: "center",
       };
       
-const fauser ={
-  marginRight:"50px",
-}
+
 
     if (this.context.token === '') {
       return (
@@ -68,7 +66,7 @@ const fauser ={
                 </tr>
                 <tr>
                   <td></td>
-                  <td><input style={buttonStyle} type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
+                  <td><input className='but' style={buttonStyle} type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
                 </tr>
               </tbody>
             </table>
