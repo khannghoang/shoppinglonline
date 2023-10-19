@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import MyContext from '../contexts/MyContext';
 import withRouter from '../utils/withRouter';
-
+import { FaUser, FaLock } from "react-icons/fa";
 class Login extends Component {
   static contextType = MyContext; // using this.context to access global state
   constructor(props) {
@@ -13,23 +13,64 @@ class Login extends Component {
     };
   }
   render() {
+    const cardStyle = {
+      borderRadius: "15px",
+      padding: "30px",
+      backgroundColor: "white",
+      width: "300px",
+      margin: "0 auto",
+      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
+      marginTop:"5%"
+      };
+      
+      const inputStyle = {
+      borderRadius: "15px",
+      margin: "10px 0",
+      padding: "10px",
+      border: "1px solid #ccc",
+      width: "100%",
+      boxSizing: "border-box",
+      display: "flex",
+      alignItems: "center",
+      marginLeft:"10px",
+      
+      };
+      
+      const buttonStyle = {
+      borderRadius: "15px",
+      margin: "10px 0",
+      padding: "10px",
+      backgroundColor: "rgb(118, 74, 188)",
+      color: "white",
+      border: "none",
+      width: "100%",
+      cursor: "pointer",
+      textAlign: "center",
+      };
+      const move={
+        marginLeft:"35px"
+      }
+      const move2={
+        marginRight:"15px",
+        fontSize:"25px"
+      }
     return (
-      <div  className="align-centerr">
-        <h2 className="text-centerr">CUSTOMER LOGIN</h2>
+      <div style={cardStyle}  className="align-centerr">
+        <h2 style={move2} className="text-center">CUSTOMER LOGIN</h2>
         <form>
-          <table className="align-centerr">
+          <table style={move} className="align-center">
             <tbody>
               <tr>
-                <td>Username</td>
-                <td><input type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
+              <td class="fauser"><FaUser /></td>
+                <td><input  style={inputStyle} placeholder='Username' type="text" value={this.state.txtUsername} onChange={(e) => { this.setState({ txtUsername: e.target.value }) }} /></td>
               </tr>
               <tr>
-                <td>Password</td>
-                <td><input type="password" value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} /></td>
+              <td class="fauser"><FaLock /></td>
+                <td><input style={inputStyle} placeholder='Password' type="password" value={this.state.txtPassword} onChange={(e) => { this.setState({ txtPassword: e.target.value }) }} /></td>
               </tr>
               <tr>
                 <td></td>
-                <td><input type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
+                <td><input className='but' style={buttonStyle} type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
               </tr>
             </tbody>
           </table>
