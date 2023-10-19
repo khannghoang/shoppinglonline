@@ -1,7 +1,5 @@
 /* styles.css */
-body{
-  background-color: rgb(236, 229, 219);
-}
+
 .body-customer {
   width: 1150px;
   height: fit-content;
@@ -22,7 +20,7 @@ body{
 
 }
 .but{
-  box-shadow: #1c0488 2px 2px 0 0;
+  box-shadow: #0b042a 2px 2px 0 0;
 }
 .but:hover{
   transform: translateY(-5px);
@@ -32,9 +30,11 @@ body{
 
 }
 .hoverr{
-  font-weight: 900;
+  font-weight: 500;
   font:bold;
-  font-size:15px
+  font-size:15px;
+  color:rgb(92,92,93);
+  text-decoration: none;
 }
 .hoverr:hover{
   transform: translateY(-5px);
@@ -109,8 +109,8 @@ tr.button:hover{
 }
 /* header */
 tr:first-child.datatable {
-  background-color: #6A7CE0;
-  color:#fff;
+  background-color: rgb(234,234,234);
+  color:rgb(92,92,93);
  
 }
 /* even rows, except header */
