@@ -1,0 +1,151 @@
+
+.body-customer {
+  width: 1450px;
+  height: fit-content;
+  margin: 0px auto;
+ 
+}
+
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+
+.but{
+  box-shadow: #0b042a 2px 2px 0 0;
+}
+.but:hover{
+  transform: translateY(-5px);
+  transition: all 0.5s;
+  box-shadow: #ffffff  2px 2px 0 0;
+  transform: translate(2px, 2px);
+
+}
+.footer-links li{
+  padding: 5px;
+}
+.compo{
+  margin-bottom: 60px;
+}
+.hoverr{
+  color:rgb(92,92,93);
+  text-decoration: none;
+  font-weight: 500;
+}
+.hoverr:hover{
+  transform: translateY(-5px);
+  transition: all 0.5s;
+}
+.hoverrr:hover{
+  transform: translateY(-4px);
+  transition: all 0.9s;
+}
+div.inline {
+  display: inline-block;
+}
+
+.inline:hover{
+  transform: translateY(-5px);
+  transition: all .3s cubic-bezier(0,0,.5,1);
+ 
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  /* margin: 0px auto; */
+  margin-left :150px;
+}
+
+.align-centerr {
+  width:fit-content;
+  /* margin: 0px auto; */
+  margin-left :310px;
+  
+}
+.text-centerr{
+  margin-left :310px;
+}
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 450%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+.text-center {
+  text-align: center;
+  font-size:30px;
+  font-weight: 750;
+  color: #1d1d1f;
+  margin-top:10px;
+  font: bold;
+  margin-right: 150px;
+}
+
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+  margin-left: 10px;
+}
+div.float-right {
+  float: right;
+  margin-right: 10px;
+}
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+.font{
+  font-weight: 600;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
