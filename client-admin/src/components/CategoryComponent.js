@@ -43,14 +43,6 @@ class Category extends Component {
       marginBottom:"30px"
       
     }
-    // const footer={
-    //   padding: "100px",
-    //   backgroundColor: "white",
-    //   width: "1260px",
-    //   margin: "0 auto",
-    //   boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-    //   marginTop:"40px",
-    // }
     return (
       <div>
         <div style={full} className="float-left">
