@@ -134,18 +134,34 @@ input.keyword {
 }
 /* header */
 tr:first-child.datatable {
-  background-color: #ffcc00;
+  background-color: rgb(234,234,234);
+  color:rgb(92,92,93);
+ 
 }
 /* even rows, except header */
 tr:not(:first-child):nth-child(even).datatable {
-  background-color: #f5f5f5;
+  background-color: #fff;
+}
+tr:not(:first-child):nth-child(even).datatable:hover {
+  transform: translateX(-5px);
+  transition: all 0.5s;
 }
 /* odd rows, except header */
 tr:not(:first-child):nth-child(odd).datatable {
-  background-color: #ffeeaa;
+  background-color: #f8f6ff;
+
+}
+
+tr:not(:first-child):nth-child(odd).datatable :hover{
+  transform: translateX(-5px);
+  transition: all 0.5s;
 }
 /* except header */
 tr:not(:first-child):hover.datatable {
   background-color: #dcfcfc;
   cursor: pointer;
+}
+tr:not(:first-child):hover.datatable:hover {
+  transform: translateX(-5px);
+  transition: all 0.5s;
 }
