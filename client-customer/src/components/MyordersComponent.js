@@ -41,11 +41,34 @@ class Myorders extends Component {
         );
       });
     }
+    const full={
+      borderRadius: "15px",
+      borderTopRightRadius:"0px",
+      borderBottomRightRadius:"0px",
+      padding: "20px",
+      backgroundColor: "white",
+      width: "1060px",
+      margin: "0 auto",
+      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
+      marginTop:"20px",
+      height:"370px"
+    }
+    const table={
+      border:" 1px solid #fff",
+      marginLeft:"80px",
+      width:"900px",
+      fontSize:"20px",
+      marginBottom:"30px"
+      
+    }
+    const move={
+      marginLeft:"150px"
+    }
     return (
       <div>
-        <div  className="align-center">
-          <h2 className="text-center">ORDER LIST</h2>
-          <table className="datatable" border="1">
+        <div style={full} className="align-center">
+          <h2 style={move} className="text-center">ORDER LIST</h2>
+          <table style={table} className="datatable" border="1">
             <tbody>
               <tr className="datatable">
                 <th>ID</th>
