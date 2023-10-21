@@ -16,15 +16,6 @@ class Signup extends Component {
     };
   }
   render() {
-    const cardStyle = {
-      borderRadius: "15px",
-      padding: "30px",
-      backgroundColor: "white",
-      width: "400px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"2%"
-      };
       
       const inputStyle = {
       borderRadius: "15px",
@@ -58,10 +49,10 @@ class Signup extends Component {
         fontSize:"25px"
       }
     return (
-      <div  style={cardStyle} className="align-centerr">
+      <div className="align-centerr cardStyleforsignup">
         <h2 style={move2} className="text-center">SIGN-UP</h2>
         <form>
-          <table style={move} className="align-centerr">
+          <table style={move} className="align-centerr signup">
             <tbody>
               <tr>
               <td class="fauser"><FaUser /></td>
@@ -105,7 +96,7 @@ class Signup extends Component {
       const account = { username: username, password: password, name: name, phone: phone, email: email };
       this.apiSignup(account);
     } else {
-      alert('Please input username and password and name and phone and email');
+      alert('Hãy nhập Username, Password, Tên, SĐT, và Email');
     }
   }
   // apis
