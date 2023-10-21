@@ -18,14 +18,7 @@ class Product extends Component {
       color: "#1d1d1f",
     marginTop:"10px",
     }
-    const fullbox={
-      margin:"10px",
-      padding:"10px",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      borderRadius:"18px",
-      // height: "29.41176rem",
-      // boxShadow: "2px 4px 12px rgba(0,0,0,.08)",
-    }
+  
     const marginfor={
       marginLeft:"160px"
     }
@@ -41,16 +34,16 @@ class Product extends Component {
    
     const prods = this.state.products.map((item) => {
       return (
-        <div style={fullbox} key={item._id} className="inline">
+        <div key={item._id} className="inline fullboxlistproduct">
           <figure>
-            <Link to={'/product/' + item._id}><img src={"data:image/jpg;base64," + item.image} width="250px" height="250px" alt="" /></Link>
+            <Link to={'/product/' + item._id}><img className='imagelistproduct' src={"data:image/jpg;base64," + item.image} width="250px" height="250px" alt="" /></Link>
             <figcaption style={textcente} ><span style={span}>{item.name}</span><br /><span style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
         </div>
       );
     });
     return (
-      <div style={marginfor} className="text-center">
+      <div style={marginfor} className="text-center text-center-respon">
         <h2 style={marginfor2} className="text-center">LIST PRODUCTS</h2>
         {prods}
       </div>
