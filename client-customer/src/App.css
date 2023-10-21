@@ -1,5 +1,5 @@
 .body-customer {
-  width: 1450px;
+  width: 100%x;
   height: fit-content;
   margin: 0px auto;
  
@@ -88,8 +88,9 @@ figure.caption-right {
 }
 
 span.link {
+  
   cursor: pointer;
-  color: blue;
+  color: rgb(119, 0, 255);
   text-decoration: underline;
 }
 /* menu.css */
@@ -309,11 +310,20 @@ tr:not(:first-child):hover.datatable:hover {
       position: relative;
       right: 15%;
     }
+    .spanrespon{
+      font-size: 17px;
+      }
+      .spanpricerespon{
+        font-size: 17px;
+        color: red;
+      }
 /* >=992 => Desktop 
 <992px và >=768px => Tablet
 <768px => Mobile
 */
-
+@media (min-width: 1200px) {
+ 
+}
 @media (max-width: 991px) and (min-width:768px){
   .but{
     box-shadow: #0b042a 2px 2px 0 0;
@@ -340,13 +350,13 @@ tr:not(:first-child):hover.datatable:hover {
     transition: all 0.9s;
   }
   .body-customer {
-    width: 990px;
+    width: 100%;
     height: fit-content;
     margin: 0px auto;
    
   }
   div .menurespon2{
-    width: 988px;
+    width: 100% ;
   }
   .menu-toggle{
     display: block;
@@ -385,62 +395,62 @@ tr:not(:first-child):hover.datatable:hover {
   margin-right: 20px;
  }
  .mySwiper{
-  width: 900px;
-    height: 350px;
-  margin-left: 45px;
+  width: 600px;
+    height: 250px;
+  margin-left: 105px;
  }
  .banner {
- width: 900px;
-    height: 350px;
+ width: 600px;
+    height: 250px;
 }
 .imageStyle {
-  width: 900px;
-  height: 350px;
+  width: 600px;
+  height:250px;
 }
 .align-center{
-  margin-left: 100px;
+  margin-left: 85px;
 }
 .text-center{
-  margin-left: 40px;
+  margin-left: 30px;
 }
 .text-centerr{
   margin-left: 10px;
 }
 .hotrespon{
   position: relative;
-  right: 9%;
+  right: 11%;
 }
 .fullboxdetail{
-  margin:60px;
-  padding:15px;
+  margin: 60px;
+  padding: 15px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-  border-radius:18px;
-  height: 29.41176rem;
-  background-color:white;
-  margin-left:100px;
+  border-radius: 18px;
+  height: 26.41176rem;
+  background-color: white;
+  margin-left: 60px;
 }
 .detailrespon{
-  margin-left: 300px;
+  margin-left: 215px;
 }
 .fullorderlist{
   border-Radius: 15px;
-  border-bottom-left-radius:0px;
-  border-bottom-right-radius:0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   padding: 20px;
   background-color: white;
-  width: 850px;
+  width: 630px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-  margin-top:60px;
-  height:370px;
+  margin-top: 60px;
+  height: 448px;
   margin-bottom: 60px;
 }
 .tableorderlist{
-border: 1px solid #fff;
-  margin-left:5px;
-  width:850px;
-  font-size:20px;
-  margin-bottom:30px;
+  border: 1px solid #fff;
+  margin-left: 5px;
+  width: 710px;
+  font-size: 15px;
+  margin-bottom: 30px;
 }
 .fullorderlist1{
   border-radius: 15px;
@@ -460,7 +470,7 @@ border: 1px solid #fff;
   border-bottom-left-radius: 0px;
   padding: 20px;
   background-color: white;
-  width: 866px;
+  width: 630px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top: 25px;
@@ -480,14 +490,20 @@ border: 1px solid #fff;
 }
  .tableorderlist2{
   border: 1px solid #fff;
-  margin-left: 22px;
-  width: 844px;
-  font-size: 20px;
+  margin-left: 1px;
+  width: 625px;
+  font-size: 14px;
   margin-bottom: 30px;
 }
 .imagelistproduct{
-  width: 150px;
+  width: 129px;
   height: 150px;
+}
+.spanrespon{
+font-size: 15px;
+}
+.spanpricerespon{
+  font-size: 15px;
 }
 .fullboxlistproduct{
   margin:10px;
@@ -505,13 +521,32 @@ border: 1px solid #fff;
   margin-top:9%;
   }
   .cardStyleforsignup{
-    border-radius:15px;
-    padding:30px;
-    background-color:white;
-    width:300px;
-    margin:0 auto;
-    box-shadow:0px 0px 10px 2px rgba(0,0,0,0.1);
-    margin-top:4%;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    }
+    .imagerespon{
+      width: 170px;
+      height: 170px;
+    }
+    .imagedetailrespon{
+      width: 250px;
+      height: 250px;
+      margin: 10px 0px;
+    }
+    .none{
+      display: none;
+    }
+    .cartrespon{
+      position: relative;
+      right: 4.9%;
+    }
+    .textcenterfornew{
+      position: relative;
+      left: 5%;
     }
 }
 
@@ -541,7 +576,7 @@ border: 1px solid #fff;
     transition: all 0.9s;
   }
   .body-customer {
-    width: 767px;
+    width: 100%;
     height: fit-content;
     margin: 0px auto;
    
@@ -622,8 +657,8 @@ border: 1px solid #fff;
   background-color:white;
 }
 .imagerespon{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .fullboxdetail{
   margin:70px;
