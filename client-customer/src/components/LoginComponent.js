@@ -13,15 +13,7 @@ class Login extends Component {
     };
   }
   render() {
-    const cardStyle = {
-      borderRadius: "15px",
-      padding: "30px",
-      backgroundColor: "white",
-      width: "300px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"5%"
-      };
+    
       
       const inputStyle = {
       borderRadius: "15px",
@@ -55,7 +47,7 @@ class Login extends Component {
         fontSize:"25px"
       }
     return (
-      <div style={cardStyle}  className="align-centerr">
+      <div  className="align-centerr cardStyle">
         <h2 style={move2} className="text-center">CUSTOMER LOGIN</h2>
         <form>
           <table style={move} className="align-center">
@@ -87,7 +79,7 @@ class Login extends Component {
       const account = { username: username, password: password };
       this.apiLogin(account);
     } else {
-      alert('Please input username and password');
+      alert('Hãy nhập Username và Password');
     }
   }
   // apis
