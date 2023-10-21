@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import MyContext from '../contexts/MyContext';
 import {FaLocationDot,FaPhone} from "react-icons/fa6";
 import {ImMail4} from "react-icons/im"
-import withRouter from '../utils/withRouter';
+// import withRouter from '../utils/withRouter';
 class Footer extends Component {
     static contextType = MyContext
     constructor(props) {
