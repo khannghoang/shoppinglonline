@@ -25,19 +25,15 @@ class Product extends Component {
     const marginfor2={
       marginLeft:"150px"
     }
-    const span={
-      fontSize:"20px"
-    }
-   const spanprice={
-    color:"red"
-   }
+   
+   
    
     const prods = this.state.products.map((item) => {
       return (
         <div key={item._id} className="inline fullboxlistproduct">
           <figure>
             <Link to={'/product/' + item._id}><img className='imagelistproduct' src={"data:image/jpg;base64," + item.image} width="250px" height="250px" alt="" /></Link>
-            <figcaption style={textcente} ><span style={span}>{item.name}</span><br /><span style={spanprice}>Price: {item.price}</span></figcaption>
+            <figcaption style={textcente} ><span className='spanrespon' >{item.name}</span><br /><span className="spanpricerespon" >Price: {item.price}</span></figcaption>
           </figure>
         </div>
       );
