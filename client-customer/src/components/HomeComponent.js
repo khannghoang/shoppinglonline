@@ -11,16 +11,7 @@ class Home extends Component {
     };
   }
   render() {
-    const fullbox={
-      margin:"10px",
-      padding:"15px",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      borderRadius:"18px",
-      height: "29.41176rem",
-      marginLeft:"20px",
-      backgroundColor:"white"
-      // boxShadow: "2px 4px 12px rgba(0,0,0,.08)",
-    }
+  
     const textcente={
       textAlign: "center",
     fontSize:"17px",
@@ -37,14 +28,12 @@ class Home extends Component {
    const spanprice={
     color:"red"
    }
-   const textt={
-    marginLeft:"150px"
-   }
+  
     const newprods = this.state.newprods.map((item) => {
       return (
-        <div style={fullbox} key={item._id} className="inline">
+        <div key={item._id} className="inline fullbox">
           <figure style={margin}>
-          <Link  to={'/product/' + item._id}><img src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
+          <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
             {/* <a href=""><img src={"data:image/jpg;base64," + item.image} width="300px" height="300px" alt="" /></a> */}
             <figcaption style={textcente} ><span style={span}>{item.name}</span><br /><span style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
@@ -53,9 +42,9 @@ class Home extends Component {
     });
     const hotprods = this.state.hotprods.map((item) => {
       return (
-        <div style={fullbox} key={item._id} className="inline">
+        <div  key={item._id} className="inline fullbox">
           <figure style={margin}>
-          <Link  to={'/product/' + item._id}><img  src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
+          <Link  to={'/product/' + item._id}><img className='imagerespon'   src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
 
             {/* <a href=""><img src={"data:image/jpg;base64," + item.image} width="300px" height="300px" alt="" /></a> */}
             <figcaption style={textcente} ><span style={span}>{item.name}</span><br /><span style={spanprice}>Price: {item.price}</span></figcaption>
@@ -71,7 +60,7 @@ class Home extends Component {
         </div>
         {this.state.hotprods.length > 0 ?
           <div className="align-center">
-            <h2 style={textt} className="text-center">HOT PRODUCTS</h2>
+            <h2 className="hotrespon">HOT PRODUCTS</h2>
             {hotprods}
           </div>
           : <div />}
