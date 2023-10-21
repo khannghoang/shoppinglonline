@@ -23,14 +23,7 @@ class Footer extends Component {
               <li key={item._id} className='hoverr' ><Link className="hoverr text2" to={'/product/category/' + item._id}>{item.name}</Link></li>
             );
           });
-          const test={
-            display:"flex",
-            justifyContent:"space-around",
-            margin:"10px",
-            padding:"25px",
-            borderRadius:"18px",
-            backgroundColor:"rgb(234,234,234)",
-          }
+          
           const test2={
             display:"flex",
             flexDirection:"column", 
@@ -56,7 +49,7 @@ class Footer extends Component {
       return (
 <footer>
   <div class="container">
-    <div style={test} class="row">
+    <div  class="row test">
      <div style={compo} >
         <h6 style={text}>About Us</h6>
         <ul  style={dot}>
