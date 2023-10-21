@@ -5,6 +5,7 @@ import MyContext from '../contexts/MyContext';
 import { FaUser, FaLock } from "react-icons/fa";
 import { ImProfile,ImMail} from "react-icons/im";
 import { BsTelephoneFill} from "react-icons/bs";
+import Password from 'antd/es/input/Password';
 
 class Myprofile extends Component {
   static contextType = MyContext; // using this.context to access global state
@@ -121,7 +122,8 @@ class Myprofile extends Component {
       const customer = { username: username, password: password, name: name, phone: phone, email: email };
       this.apiPutCustomer(this.context.customer._id, customer);
     } else {
-      alert('Please input username and password and name and phone and email');
+      alert('Hãy nhập Username, Password, Tên, SĐT, và Email');
+      
     }
   }
   // apis
@@ -130,10 +132,10 @@ class Myprofile extends Component {
     axios.put('/api/customer/customers/' + id, customer, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('Thành công');
         this.context.setCustomer(result);
       } else {
-        alert('SORRY BABY!');
+        alert('Thất bại');
       }
     });
   }
