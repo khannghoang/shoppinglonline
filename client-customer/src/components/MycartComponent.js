@@ -11,50 +11,31 @@ class Mycart extends Component {
       return (
         <tr key={item.product._id} className="datatable">
           <td>{index + 1}</td>
-          <td>{item.product._id}</td>
+          <td className='none'>{item.product._id}</td>
           <td>{item.product.name}</td>
           <td>{item.product.category.name}</td>
           <td><img src={"data:image/jpg;base64," + item.product.image} width="70px" height="70px" alt="" /></td>
           <td>{item.product.price}</td>
           <td>{item.quantity}</td>
           <td>{item.product.price * item.quantity}</td>
-          <td><span className="link" onClick={() => this.lnkRemoveClick(item.product._id)}>Remove</span></td>
+          <td ><span className="link" onClick={() => this.lnkRemoveClick(item.product._id)}>Remove</span></td>
           
         </tr>
       );
     });
    
-    const full={
-      borderRadius: "15px",
-      borderTopRightRadius:"0px",
-      borderBottomRightRadius:"0px",
-      padding: "20px",
-      backgroundColor: "white",
-      width: "1060px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"20px",
-      height:"370px"
-    }
-    const table={
-      border:" 1px solid #fff",
-      marginLeft:"80px",
-      width:"900px",
-      fontSize:"20px",
-      marginBottom:"30px"
-      
-    }
+ 
     const move={
       marginLeft:"43%"
     }
     return (
-      <div style={full} className="align-centerr">
+      <div className="align-centerr fullorderlist">
         <h2 style={move} className="text-centerr">ITEM LIST</h2>
-        <table style={table} className="datatable" border="1">
-          <tbody>
-            <tr className="datatable">
+        <table  className="datatable tableorderlist" border="1">
+          <tbody className='bodycart'>
+            <tr className="datatable datatable1">
               <th>No.</th>
-              <th>ID</th>
+              <th className='none'>ID</th>
               <th>Name</th>
               <th>Category</th>
               <th>Image</th>
@@ -64,11 +45,11 @@ class Mycart extends Component {
               <th>Action</th>
             </tr>
             {mycart}
-            <tr>
+            <tr className='cartrespon'>
               <td colSpan="6"></td>
-              <td>Total</td>
-              <td>{CartUtil.getTotal(this.context.mycart)}</td>
-              <td><span className="link" onClick={() => this.lnkCheckoutClick()}>CHECKOUT</span></td>
+              <td className='cartrespon'>Total</td>
+              <td className='cartrespon'>{CartUtil.getTotal(this.context.mycart)}</td>
+              <td className='cartrespon'><span className="link" onClick={() => this.lnkCheckoutClick()}>CHECKOUT</span></td>
             </tr>
           </tbody>
         </table>
@@ -86,7 +67,7 @@ class Mycart extends Component {
   }
    // event-handlers
    lnkCheckoutClick() {
-    if (window.confirm('ARE YOU SURE?')) {
+    if (window.confirm('Bạn chắc chắn muốn thanh toán')) {
       if (this.context.mycart.length > 0) {
         const total = CartUtil.getTotal(this.context.mycart);
         const items = this.context.mycart;
@@ -97,7 +78,7 @@ class Mycart extends Component {
           this.props.navigate('/login');
         }
       } else {
-        alert('Your cart is empty');
+        alert('Giỏ hàng bạn trống');
       }
     }
   }
@@ -108,11 +89,11 @@ class Mycart extends Component {
     axios.post('/api/customer/checkout', body, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('Thanh toán thành công');
         this.context.setMycart([]);
         this.props.navigate('/home');
       } else {
-        alert('SORRY BABY!');
+        alert('Thanh toán thất bại');
       }
     });
   }
