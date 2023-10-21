@@ -12,16 +12,6 @@ class ProductDetail extends Component {
     };
   }
   render() {
-    const fullbox={
-      margin:"10px",
-      padding:"15px",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      borderRadius:"18px",
-      height: "29.41176rem",
-      marginLeft:"350px",
-      backgroundColor:"white"
-      // boxShadow: "2px 4px 12px rgba(0,0,0,.08)",
-    }
     const font={
       fontWeight:"600"
     }
@@ -36,18 +26,18 @@ class ProductDetail extends Component {
       backgroundColor: "rgb(118, 74, 188)",
       color: "white",
       border: "none",
-      width: "55%", // Giảm chiều rộng để chia sẻ không gian với ô tìm kiếm
+      width: "55%",
       cursor: "pointer",
       textAlign: "center",
     };
     const prod = this.state.product;
     if (prod != null) {
       return (
-        <div style={fullbox} className="align-center ">
-          <h2 className="text-centerr ">PRODUCT DETAILS</h2>
+        <div  className="align-center fullboxdetail">
+          <h2 className="text-centerr detailrespon">PRODUCT DETAILS</h2>
           <figure className="caption-right">
-            <img src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
-            <figcaption>
+            <img className='imagedetailrespon' src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
+            <figcaption className='figurerespon'>
               <form >
                 <table>
                   <tbody style={font} >
@@ -105,9 +95,9 @@ class ProductDetail extends Component {
         mycart[index].quantity += quantity;
       }
       this.context.setMycart(mycart);
-      alert('OK BABY!');
+      alert('Thêm giỏ hàng thành công');
     } else {
-      alert('Please input quantity');
+      alert('Hãy nhập số lượng');
     }
   }
   // apis
