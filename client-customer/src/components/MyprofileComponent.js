@@ -5,7 +5,7 @@ import MyContext from '../contexts/MyContext';
 import { FaUser, FaLock } from "react-icons/fa";
 import { ImProfile,ImMail} from "react-icons/im";
 import { BsTelephoneFill} from "react-icons/bs";
-import Password from 'antd/es/input/Password';
+
 
 class Myprofile extends Component {
   static contextType = MyContext; // using this.context to access global state
