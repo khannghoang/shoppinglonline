@@ -17,7 +17,7 @@ class Myorders extends Component {
     const orders = this.state.orders.map((item) => {
       return (
         <tr key={item._id} className="datatable" onClick={() => this.trItemClick(item)}>
-          <td>{item._id}</td>
+          <td className='none'>{item._id}</td>
           <td>{new Date(item.cdate).toLocaleString()}</td>
           <td>{item.customer.name}</td>
           <td>{item.customer.phone}</td>
@@ -29,9 +29,9 @@ class Myorders extends Component {
     if (this.state.order) {
       var items = this.state.order.items.map((item, index) => {
         return (
-          <tr key={item.product._id} className="datatable">
+          <tr key={item.product._id} className="datatable ">
             <td>{index + 1}</td>
-            <td>{item.product._id}</td>
+            <td className='none'>{item.product._id}</td>
             <td>{item.product.name}</td>
             <td><img src={"data:image/jpg;base64," + item.product.image} width="70px" height="70px" alt="" /></td>
             <td>{item.product.price}</td>
@@ -41,48 +41,19 @@ class Myorders extends Component {
         );
       });
     }
-    const full={
-      borderRadius: "15px",
-      borderBottomRightRadius:"0px",
-      borderBottomLeftRadius:"0px",
-      padding: "20px",
-      backgroundColor: "white",
-      width: "1060px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"25px",
-      height:"370px"
-    }
-    const full2={
-      borderRadius: "15px",
-      borderTopRightRadius:"0px",
-      borderTopLeftRadius:"0px",
-      padding: "20px",
-      backgroundColor: "white",
-      width: "1060px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      height:"250px"
-    }
-    const table={
-      border:" 1px solid #fff",
-      marginLeft:"80px",
-      width:"900px",
-      fontSize:"20px",
-      marginBottom:"30px"
-      
-    }
+   
+   
     const move={
       marginLeft:"150px"
     }
     return (
       <div>
-        <div style={full} className="align-center">
+        <div className="align-center order fullorderlist3">
           <h2 style={move} className="text-center">ORDER LIST</h2>
-          <table style={table} className="datatable" border="1">
+          <table  className="datatable tableorderlist2" border="1">
             <tbody>
               <tr className="datatable">
-                <th>ID</th>
+                <th className='none'>ID</th>
                 <th>Creation date</th>
                 <th>Cust.name</th>
                 <th>Cust.phone</th>
@@ -94,13 +65,13 @@ class Myorders extends Component {
           </table>
         </div>
         {this.state.order ?
-          <div  style={full2} className="align-center">
+          <div  className="align-center fullorderlist2">
             <h2  style={move} className="text-center">ORDER DETAIL</h2>
-            <table style={table} className="datatable" border="1">
+            <table className="datatable tableorderlist2" border="1">
               <tbody>
                 <tr className="datatable">
                   <th>No.</th>
-                  <th>Prod.ID</th>
+                  <th className='none'>Prod.ID</th>
                   <th>Prod.name</th>
                   <th>Image</th>
                   <th>Price</th>
