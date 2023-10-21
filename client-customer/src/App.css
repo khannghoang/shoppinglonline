@@ -313,9 +313,7 @@ tr:not(:first-child):hover.datatable:hover {
 <992px và >=768px => Tablet
 <768px => Mobile
 */
-@media (min-width: 1200px) {
- 
-}
+
 @media (max-width: 991px) and (min-width:768px){
   .but{
     box-shadow: #0b042a 2px 2px 0 0;
