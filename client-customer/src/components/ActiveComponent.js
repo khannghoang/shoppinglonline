@@ -10,15 +10,6 @@ class Active extends Component {
     };
   }
   render() {
-    const cardStyle = {
-      borderRadius: "15px",
-      padding: "30px",
-      backgroundColor: "white",
-      width: "300px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"5%"
-      };
       
       const inputStyle = {
       borderRadius: "15px",
@@ -52,7 +43,7 @@ class Active extends Component {
         fontSize:"25px"
       }
     return (
-      <div style={cardStyle} className="align-centerr">
+      <div  className="align-centerr cardStyle">
         <h2  style={move2} className="text-center">ACTIVE ACCOUNT</h2>
         <form>
           <table style={move} className="align-centerr">
@@ -83,7 +74,7 @@ class Active extends Component {
     if (id && token) {
       this.apiActive(id, token);
     } else {
-      alert('Please input id and token');
+      alert('Hãy nhập Id và Token');
     }
   }
   // apis
@@ -92,9 +83,9 @@ class Active extends Component {
     axios.post('/api/customer/active', body).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('Active thành công');
       } else {
-        alert('SORRY BABY!');
+        alert('Active thất bại');
       }
     });
   }
