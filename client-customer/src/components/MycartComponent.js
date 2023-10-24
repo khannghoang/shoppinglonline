@@ -26,11 +26,11 @@ class Mycart extends Component {
    
  
     const move={
-      marginLeft:"43%"
+      // marginLeft:"33%"
     }
     return (
       <div className="align-centerr fullorderlist">
-        <h2 style={move} className="text-centerr">ITEM LIST</h2>
+        <h2 style={move} className="text-centerr movingitemlist">ITEM LIST</h2>
         <table  className="datatable tableorderlist" border="1">
           <tbody className='bodycart'>
             <tr className="datatable datatable1">
