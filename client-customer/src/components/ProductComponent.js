@@ -20,10 +20,10 @@ class Product extends Component {
     }
   
     const marginfor={
-      marginLeft:"160px"
+      // marginLeft:"160px"
     }
     const marginfor2={
-      marginLeft:"150px"
+      // marginLeft:"150px"
     }
    
    
@@ -39,7 +39,7 @@ class Product extends Component {
       );
     });
     return (
-      <div style={marginfor} className="text-center text-center-respon">
+      <div style={marginfor} className="text-center text-center-respon" >
         <h2 style={marginfor2} className="text-center">LIST PRODUCTS</h2>
         {prods}
       </div>
