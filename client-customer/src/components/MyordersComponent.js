@@ -44,12 +44,12 @@ class Myorders extends Component {
    
    
     const move={
-      marginLeft:"150px"
+      // marginLeft:"150px"
     }
     return (
       <div>
         <div className="align-center order fullorderlist3">
-          <h2 style={move} className="text-center">ORDER LIST</h2>
+          <h2 className="text-center movingoderlist">ORDER LIST</h2>
           <table  className="datatable tableorderlist2" border="1">
             <tbody>
               <tr className="datatable">
