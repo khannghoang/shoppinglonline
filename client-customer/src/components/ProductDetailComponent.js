@@ -19,17 +19,7 @@ class ProductDetail extends Component {
       color:"red"
 
     }
-    const buttonStyle = {
-      borderRadius: "5px",
-      margin: "10px 0",
-      padding: "10px",
-      backgroundColor: "rgb(118, 74, 188)",
-      color: "white",
-      border: "none",
-      width: "55%",
-      cursor: "pointer",
-      textAlign: "center",
-    };
+  
     const prod = this.state.product;
     if (prod != null) {
       return (
@@ -63,7 +53,7 @@ class ProductDetail extends Component {
                     </tr>
                     <tr >
                       <td></td>
-                      <td><input style={buttonStyle} className='but' type="submit" value="ADD TO CART" onClick={(e) => this.btnAdd2CartClick(e)}   /></td>
+                      <td><input className='but buttonStyle' type="submit" value="ADD TO CART" onClick={(e) => this.btnAdd2CartClick(e)}   /></td>
                     </tr>
                   </tbody>
                 </table>
