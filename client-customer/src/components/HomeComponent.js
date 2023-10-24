@@ -42,9 +42,9 @@ class Home extends Component {
     });
     const hotprods = this.state.hotprods.map((item) => {
       return (
-        <div  key={item._id} className="inline fullbox">
+        <div  key={item._id} className="inline fullboxlistproduct">
           <figure style={margin}>
-          <Link  to={'/product/' + item._id}><img className='imagerespon'   src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
+          <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
 
             {/* <a href=""><img src={"data:image/jpg;base64," + item.image} width="300px" height="300px" alt="" /></a> */}
             <figcaption style={textcente} ><span style={span}>{item.name}</span><br /><span style={spanprice}>Price: {item.price}</span></figcaption>
@@ -54,15 +54,23 @@ class Home extends Component {
     });
     return (
       <div>
-        <div className="align-center">
-          <h2 className="text-center">NEW PRODUCTS</h2>
+        {/* <div className="align-center ">
+          <h2 className="text-center textcenterfornew">NEW PRODUCTS</h2>
           {newprods}
-        </div>
+        </div> */}
+        <div  className="text-center text-center-respon" >
+          <h2  className="text-center">NEW PRODUCTS</h2>
+        {newprods}
+      </div>
         {this.state.hotprods.length > 0 ?
-          <div className="align-center">
-            <h2 className="hotrespon">HOT PRODUCTS</h2>
+          // <div className="align-center">
+          //   <h2 className="hotrespon">HOT PRODUCTS</h2>
+          //   {hotprods}
+          // </div>
+          <div className="text-center text-center-respon" >
+            <h2  className="text-center">HOT PRODUCTS</h2>
             {hotprods}
-          </div>
+            </div>
           : <div />}
       </div>
     );
