@@ -335,6 +335,23 @@ width: 950px;
         font-size: 17px;
         color: red;
       }
+      .buttonStyle {
+       border-radius: 5px;
+       margin: 10px 0;
+       padding: 10px;
+       background-color: rgb(118, 74, 188);
+       color: white;
+       border: none;
+       width: 55%;
+       cursor: pointer;
+       text-align: center;
+      }
+      .movingitemlist{
+        margin-left:43%;
+      }
+      .movingorderlist{
+        margin-left:43%;
+      }
       /* .imagerespon{
         width: 250px;
         height: 250px;
@@ -438,7 +455,7 @@ width: 950px;
   margin: 6%
 }
 .text-center{
-  margin-left: 30px;
+  margin:auto;
 }
 .text-centerr{
   margin-left: 10px;
@@ -590,7 +607,7 @@ font-size: 15px;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 767px){
   .but{
     box-shadow: #0b042a 2px 2px 0 0;
   }
@@ -622,7 +639,7 @@ font-size: 15px;
    
   }
   div .menurespon2{
-    width: 767px;
+    width: 100% ;
   }
   .menu-toggle{
     display: block;
@@ -662,23 +679,25 @@ font-size: 15px;
   margin-right: 20px;
  }
  .mySwiper{
-  width: 700px;
-    height: 300px;
-  margin-left: 37px;
+  width: 300px;
+    height: 150px;
+  margin:auto
  }
  .banner {
- width: 700px;
-    height: 300px;
+  width: 300px;
+  height: 150px;
 }
 .imageStyle {
-  width: 700px;
-  height: 300px;
+  width: 300px;
+  height: 150px;
 }
 .align-center{
-  margin-left: 110px;
+  /* margin-left: 110px; */
 }
 .text-center{
-  margin-left: 36px;
+  /* margin-left: 36px; */
+  font-size: 20px;
+  margin-top: 13%;
 }
 .text-centerr{
   margin-left: 10px;
@@ -697,24 +716,37 @@ font-size: 15px;
   background-color:white;
 }
 .imagerespon{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .fullboxdetail{
-  margin:70px;
+  font-size: 10px;
+  margin:auto;
   padding:15px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   border-radius:18px;
   height: 39.41176rem;
   background-color:white;
-  margin-left:185px;
+  /* margin-left:185px; */
+}
+.but{
+  border-radius: 5px;
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: rgb(118, 74, 188);
+    color: white;
+    border: none;
+    /* width: 55%; */
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
 }
 .detailrespon{
   margin-left: 100px;
 }
 .imagedetailrespon{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin: 10px 0px;
 }
 .caption-right{
@@ -753,22 +785,26 @@ font-size: 15px;
   border-bottom-right-radius:0px;
   padding: 20px;
   background-color: white;
-  width: 560px;
+  width: 290px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top:60px;
   height:720px;
   margin-bottom: 100px;
   overflow-x: scroll;
+  position: relative;
+  left: 3%;
 }
 .tableorderlist{
   border: 1px solid #fff;
-  margin-left: 10px;
-  width: 550px;
-  font-size: 19px;
+  margin-left: -5px;
+  width: 366px;
+  font-size: 10px;
   margin-bottom: 30px;
-  margin-top: 100px;
-  
+  margin-top: 50px;
+    
+
+
 }
 .fullorderlist3{
   border-radius: 15px;
@@ -776,11 +812,13 @@ font-size: 15px;
   border-bottom-left-radius: 0px;
   padding: 20px;
   background-color: white;
-  width: 669px;
+  width: 290px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top: 25px;
   height: 370px;
+  position: relative;
+  left: 3%;
 }
 .fullorderlist2{
   border-radius: 15px;
@@ -795,10 +833,11 @@ font-size: 15px;
 }
  .tableorderlist2{
   border: 1px solid #fff;
-  margin-left: 39px;
-  width: 600px;
+  margin-left: -5px;
+  width: 300px;
   font-size: 15px;
   margin-bottom: 13px;
+  font-size: 9px;
 }
 
 .fullboxlistproduct{
@@ -824,5 +863,21 @@ font-size: 15px;
     margin:0 auto;
     box-shadow:0px 0px 10px 2px rgba(0,0,0,0.1);
     margin-top:20%;
+    }
+    .buttonStyle {
+      border-radius: 5px;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: rgb(118, 74, 188);
+      color: white;
+      border: none;
+      /* width: 55%; */
+      font-size: 10px;
+      cursor: pointer;
+      text-align: center;
+     }
+     .movingitemlist{
+      margin-left:33%;
+      font-size: 23px;
     }
 } 
