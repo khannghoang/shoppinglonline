@@ -1,3 +1,4 @@
+
 .body-customer {
   width: 100%x;
   height: fit-content;
@@ -39,7 +40,7 @@
   padding: 5px;
 }
 .compo{
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 div.inline {
   display: inline-block;
@@ -84,6 +85,7 @@ figure.caption-right {
   color: #1d1d1f;
   margin-top:10px;
   font: bold;
+  
   /* margin-right: 150px; */
 }
 
@@ -248,7 +250,7 @@ width: 950px;
     justify-content:space-around;
     margin:10px;
     padding:25px;
-    border-radius:18px;
+    /* border-radius:18px; */
     background-color:rgb(234,234,234);}
   .fullorderlist{
       border-Radius: 15px;
@@ -352,6 +354,36 @@ width: 950px;
       .movingorderlist{
         margin-left:43%;
       }
+      .textcenterespon{
+        font-size: 20px;
+      }
+      .inputStyle  {
+        border-radius: 5px;
+        margin: 10px 10px 10px 0; 
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 70%; 
+        box-sizing: border-box;
+      }
+      .menuItemStyle{
+        margin-right: 20px;
+        color: #5c5c5d; 
+        text-decoration: none; 
+        list-style-type: none; 
+        margin-left:20px;
+        font-weight:500;
+        }
+        .text{
+          font-weight:700;
+          font-size:17px;
+          margin:5px;
+          text-transform:uppercase;
+          margin-left:40px;
+        }
+        .compo{
+          margin-right:90px;
+          margin-top: 30px;
+        }
       /* .imagerespon{
         width: 250px;
         height: 250px;
@@ -364,6 +396,10 @@ width: 950px;
 
 
 @media (max-width: 992px) and (min-width:768px){
+  .compo{
+    margin-right:70px;
+    margin-top: 30px;
+  }
   .but{
     box-shadow: #0b042a 2px 2px 0 0;
   }
@@ -388,6 +424,18 @@ width: 950px;
     transform: translateY(-4px);
     transition: all 0.9s;
   }
+  .menuItemStyle{
+    margin-right: 20px;
+    color: #e0e0e0; 
+    text-decoration: none; 
+    list-style-type: none; 
+    margin-left:20px;
+    font-weight:500;
+    }
+    .menuItemStyle:hover{
+      transform: translateX(-5px);
+      transition: all 0.5s;
+    }
   .body-customer {
     width: 100%;
     height: fit-content;
@@ -475,13 +523,13 @@ width: 950px;
 }
 
 .fullboxdetail{
-  margin: 60px;
+  margin: auto;
   padding: 15px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   border-radius: 18px;
   height: 26.41176rem;
   background-color: white;
-  margin-left: 93px;
+  margin-top: 50px;
 }
 .detailrespon{
   margin-left: 215px;
@@ -567,6 +615,7 @@ font-size: 15px;
   padding:0px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   border-radius:18px;
+ 
 }
 .cardStyle{
   border-radius:15px;
@@ -605,9 +654,33 @@ font-size: 15px;
       position: relative;
       left: 5%;
     }
+    .test{
+      font-size: 15px;
+      margin: 10px;
+      margin-top: 80px;
+      margin-left: 1px;
+      padding: 29px;
+      /* border-radius: 18px; */
+      width: 95%;
+      background-color: rgb(234,234,234);
+    }
+    
 }
 
 @media (max-width: 767px){
+  .menuItemStyle{
+    margin-right: 20px;
+    color: #e0e0e0; 
+    text-decoration: none; 
+    list-style-type: none; 
+    margin-left:20px;
+    font-weight:500;
+    font-size: 13px;
+    }
+    .menuItemStyle:hover{
+      transform: translateX(-5px);
+      transition: all 0.5s;
+    }
   .but{
     box-shadow: #0b042a 2px 2px 0 0;
   }
@@ -642,14 +715,15 @@ font-size: 15px;
     width: 100% ;
   }
   .menu-toggle{
+    margin: 8px 0;
     display: block;
-    font-size: 2.5rem ;
+    font-size: 1.7rem;
   }
 
   div.menurespon{
     
     display: block;
-    min-width: 250px;
+    min-width: 170px;
     position: fixed;
     left: 0;
     top: 0;
@@ -679,9 +753,11 @@ font-size: 15px;
   margin-right: 20px;
  }
  .mySwiper{
+  left: 3%;
+  position: relative;
   width: 300px;
-    height: 150px;
-  margin:auto
+  height: 150px;
+  margin: auto;
  }
  .banner {
   width: 300px;
@@ -707,19 +783,26 @@ font-size: 15px;
   right: 16%;
 }
 .fullbox{
+  width: 39%;
   margin:10px;
   padding:5px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   border-radius:18px;
-  height: 24.41176rem;
+  height: 20.41176rem;
   margin-left:20px;
   background-color:white;
 }
 .imagerespon{
-  width: 150px;
-  height: 150px;
+  margin: -13px;
+  width: 90px;
+  height: 100px;
+}
+.textcenterespon{
+  font-size: 13px;
+  font-weight: 700;
 }
 .fullboxdetail{
+  width: 70%;
   font-size: 10px;
   margin:auto;
   padding:15px;
@@ -727,6 +810,7 @@ font-size: 15px;
   border-radius:18px;
   height: 39.41176rem;
   background-color:white;
+  margin-top: 50px;
   /* margin-left:185px; */
 }
 .but{
@@ -741,8 +825,19 @@ font-size: 15px;
     text-align: center;
     font-size: 10px;
 }
+.inputStyle  {
+  font-size: 10px;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 70%; 
+  box-sizing: border-box;
+}
 .detailrespon{
-  margin-left: 100px;
+  position: relative;
+  margin: auto;
+  left: 25%;
 }
 .imagedetailrespon{
   width: 200px;
@@ -758,18 +853,21 @@ font-size: 15px;
   padding: 15px;
 }
 .test{
+  font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
   margin-top: 40px;
-  margin-left: 30px;
-  padding: 25px;
-  border-radius: 18px;
+  margin-left: 1px;
+  padding: 16px;
+  /* border-radius: 18px; */
+  width: 96%;
   background-color: rgb(234,234,234);
 }
 .text-center-respon{
   margin-bottom: 50px;
+  margin-left: 20px;
 }
 
 .none{
@@ -841,28 +939,54 @@ font-size: 15px;
 }
 
 .fullboxlistproduct{
-  margin:10px;
-  padding:0px;
+  width: 40%;
+  margin: 10px;
+  padding: 5px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-  border-radius:18px;
+  border-radius: 18px;
+  height: 18.41176rem;
+  background-color: white;
 }
+.margincomponent{
+  margin-top:70px;
+}
+.imagelistproduct{
+  width:90px;
+  height: 100px;
+  margin:-10px
+}
+.spanrespon{
+
+  font-size: 12px;
+  font-weight: 700;
+ 
+  }
+  .spanpricerespon{
+    font-size: 13px;
+    font-weight: 700;
+
+  }
 .cardStyle{
-  border-radius:15px;
-  padding:30px;
-  background-color:white;
-  width:300px;
-  margin:0 auto;
-  box-shadow:0px 0px 10px 2px rgba(0,0,0,0.1);
-  margin-top:20%;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: white;
+  width: 240px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+  margin-top: 20%;
+  position: relative;
+  left: 4%;
   }
   .cardStyleforsignup{
-    border-radius:15px;
-    padding:30px;
-    background-color:white;
-    width:300px;
-    margin:0 auto;
-    box-shadow:0px 0px 10px 2px rgba(0,0,0,0.1);
-    margin-top:20%;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: white;
+    width: 240px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    margin-top: 13%;
+    position: relative;
+    left: 3%;
     }
     .buttonStyle {
       border-radius: 5px;
@@ -871,7 +995,7 @@ font-size: 15px;
       background-color: rgb(118, 74, 188);
       color: white;
       border: none;
-      /* width: 55%; */
+      width: 65%;
       font-size: 10px;
       cursor: pointer;
       text-align: center;
@@ -880,4 +1004,24 @@ font-size: 15px;
       margin-left:33%;
       font-size: 23px;
     }
+    .truncate-text {
+      margin-top: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    div.float-left {
+      float: left;
+      margin-left: 10px;
+      font-size: 13px;
+    }
+    .text{
+      font-weight:700;
+      font-size:17px;
+      margin:5px;
+      text-transform:uppercase;
+      margin-left:40px;
+    }
+ 
+    
 } 
