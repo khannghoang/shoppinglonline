@@ -24,7 +24,7 @@ class ProductDetail extends Component {
     if (prod != null) {
       return (
         <div  className="align-center fullboxdetail">
-          <h2 className="text-centerr detailrespon">PRODUCT DETAILS</h2>
+          <h2 className="text-centerr detailrespon truncate-text">PRODUCT DETAILS</h2>
           <figure className="caption-right">
             <img className='imagedetailrespon' src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
             <figcaption className='figurerespon'>
