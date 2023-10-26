@@ -32,26 +32,19 @@ class Footer extends Component {
             listStyle:"none",
            textDecoration:"none"
           }
-          const text={
-            fontWeight:"700",
-            fontSize:"20px",
-            margin:"5px",
-            textTransform:"uppercase",
-            marginLeft:"40px"
-          }
+        
           const text2={
             color:"rgb(92,92,93)",
             fontWeight:"500"
           }
-          const compo={
-            marginRight:"90px"
-          }
+          
+        
       return (
 <footer>
-  <div class="container">
+  <div  class="container">
     <div  class="row test">
-     <div style={compo} >
-        <h6 style={text}>About Us</h6>
+     <div className='compo' >
+        <h6 className='text'>About Us</h6>
         <ul  style={dot}>
           <li >
           <p style={text2}> <span><FaLocationDot/></span> 1/11/52 Hẻm 1 Đặng Thùy Trâm, Bình Thạnh, Hồ Chí Minh</p>
@@ -64,16 +57,16 @@ class Footer extends Component {
           </li>
         </ul>
       </div>
-      <div style={compo} >
-        <h6 style={text}>Shopping</h6>
+      <div className='compo' >
+        <h6  className='text'>Shopping</h6>
         <ul style={dot} className="footer-links">
          <span className='text2'>{cates}</span>
         </ul>
       </div>
       <div  className='compo'>
-        <h6 style={text}>Customer</h6>
+        <h6 className='text'>Customer</h6>
         <ul >
-          <div style={compo}>
+          <div className='compo'>
             {this.context.token === '' ? (
               <div >
                 <div style={test2} >
