@@ -384,6 +384,18 @@ width: 950px;
           margin-right:90px;
           margin-top: 30px;
         }
+        .cardStylemyprofile{
+          border-radius: 15px;
+          padding: 30px;
+          background-color: white;
+          width: 350px;
+          margin: 0 auto;
+          box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+          margin-top:5%;
+          }
+          .movemyprofile{
+            margin-left:45px;
+          }
       /* .imagerespon{
         width: 250px;
         height: 250px;
@@ -579,19 +591,21 @@ width: 950px;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top: 25px;
   height: 370px;
-  margin-left: 76px;
+  /* margin-left: 76px; */
+  
 }
 .fullorderlist2{
   border-radius: 15px;
-  border-bottom-right-radius:0px;
-  border-bottom-left-radius:0px;
+  border-top-right-radius:0px;
+  border-top-left-radius:0px;
   padding: 20px;
   background-color: white;
-  width: 866px;
+  width: 636px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top:25px;
-  height:250px;
+  height:369px;
+  /* margin-left: 73px; */
 }
  .tableorderlist2{
   border: 1px solid #fff;
@@ -664,6 +678,18 @@ font-size: 15px;
       width: 95%;
       background-color: rgb(234,234,234);
     }
+    .cardStylemyprofile{
+      border-radius: 15px;
+      padding: 30px;
+      background-color: white;
+      width: 350px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+      margin-top:5%;
+      }
+      .movemyprofile{
+        margin-left:45px;
+      }
     
 }
 
@@ -883,7 +909,7 @@ font-size: 15px;
   border-bottom-right-radius:0px;
   padding: 20px;
   background-color: white;
-  width: 290px;
+  width: 277px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top:60px;
@@ -896,7 +922,7 @@ font-size: 15px;
 .tableorderlist{
   border: 1px solid #fff;
   margin-left: -5px;
-  width: 366px;
+  width: 347px;
   font-size: 10px;
   margin-bottom: 30px;
   margin-top: 50px;
@@ -910,13 +936,12 @@ font-size: 15px;
   border-bottom-left-radius: 0px;
   padding: 20px;
   background-color: white;
-  width: 290px;
+  width: 250px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top: 25px;
   height: 370px;
-  position: relative;
-  left: 3%;
+ 
 }
 .fullorderlist2{
   border-radius: 15px;
@@ -924,7 +949,7 @@ font-size: 15px;
   border-top-left-radius:0px;
   padding: 20px;
   background-color: white;
-  width: 669px;
+  width: 250px;
   margin: 0 auto;
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   height:250px;
@@ -932,7 +957,7 @@ font-size: 15px;
  .tableorderlist2{
   border: 1px solid #fff;
   margin-left: -5px;
-  width: 300px;
+  width: 268px;
   font-size: 15px;
   margin-bottom: 13px;
   font-size: 9px;
@@ -1022,6 +1047,17 @@ font-size: 15px;
       text-transform:uppercase;
       margin-left:40px;
     }
- 
+    .cardStylemyprofile{
+      border-radius: 15px;
+      padding: 30px;
+      background-color: white;
+      width: 200px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+      margin-top:5%;
+      }
+      .movemyprofile{
+        margin-left:0px;
+      }
     
 } 
