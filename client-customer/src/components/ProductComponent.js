@@ -31,9 +31,9 @@ class Product extends Component {
     const prods = this.state.products.map((item) => {
       return (
         <div key={item._id} className="inline fullboxlistproduct">
-          <figure>
+          <figure className='margincomponent'>
             <Link to={'/product/' + item._id}><img className='imagelistproduct' src={"data:image/jpg;base64," + item.image} width="250px" height="250px" alt="" /></Link>
-            <figcaption style={textcente} ><span className='spanrespon' >{item.name}</span><br /><span className="spanpricerespon" >Price: {item.price}</span></figcaption>
+            <figcaption style={textcente} ><div className='spanrespon truncate-text' >{item.name}</div><br /><span className="spanpricerespon truncate-text" >Price: {item.price}</span></figcaption>
           </figure>
         </div>
       );
