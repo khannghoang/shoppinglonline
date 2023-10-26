@@ -20,15 +20,7 @@ class Myprofile extends Component {
     };
   }
   render() {
-    const cardStyle = {
-      borderRadius: "15px",
-      padding: "30px",
-      backgroundColor: "white",
-      width: "350px",
-      margin: "0 auto",
-      boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
-      marginTop:"5%"
-      };
+  
       
       const inputStyle = {
       borderRadius: "15px",
@@ -54,9 +46,7 @@ class Myprofile extends Component {
       cursor: "pointer",
       textAlign: "center",
       };
-      const move={
-        marginLeft:"45px"
-      }
+      
       const move2={
         marginRight:"5px",
         fontSize:"25px"
@@ -64,10 +54,10 @@ class Myprofile extends Component {
   
     if (this.context.token === '') return (<Navigate replace to='/login' />);
     return (
-      <div  style={cardStyle}  className="align-centerr">
+      <div   className="align-centerr cardStylemyprofile">
         <h2 style={move2} className="text-center">MY PROFILE</h2>
         <form>
-          <table style={move} className="align-centerr">
+          <table className="align-centerr movemyprofile">
             <tbody>
               <tr>
               <td class="fauser"><FaUser /></td>
