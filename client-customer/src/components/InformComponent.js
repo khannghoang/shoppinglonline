@@ -38,13 +38,13 @@ class Inform extends Component {
     }
     return (
       <div style={flexx} className="border-bottom">
-        <div className="float-left">
+        <div className="float-left scroll-animation2">
         {this.context.token === '' ?
           <div><Link  style={logpro}  to='/login' >Login</Link> | <Link style={logpro} to='/signup'>Sign-up</Link> | <Link  style={logpro} to='/active'>Active</Link></div>
           :
           <div >Hello <b>{this.context.customer.name}</b> | <Link  style={logpro} to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link> | <Link  style={logpro} to='/myprofile'>My Profile</Link></div>
         }        </div>
-        <div style={flexxx} className="float-right">
+        <div style={flexxx} className="float-right scroll-animation2">
           <Link className="hoverrr" to='/mycart'><td style={cart}><AiOutlineShoppingCart /></td></Link> <b style={number}>{this.context.mycart.length}</b> 
           <span style={order} className="float-clear" /><Link className="hoverrr" to='/myorders'><td style={cart}><LuClipboardList /></td></Link>
         </div>
