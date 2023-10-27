@@ -462,7 +462,7 @@ width: 950px;
           .movemyprofile{
             margin-left:45px;
           }
-        
+          
       /* .imagerespon{
         width: 250px;
         height: 250px;
@@ -792,10 +792,10 @@ font-size: 15px;
       font-size: 15px;
       margin: 10px;
       margin-top: 80px;
-      margin-left: 1px;
-      padding: 29px;
+      /* margin-left: 1px; */
+      padding: 25px;
       /* border-radius: 18px; */
-      width: 95%;
+      width: 94%;
       background-color: rgb(234,234,234);
     }
     .cardStylemyprofile{
@@ -950,7 +950,7 @@ font-size: 15px;
 }
 .fullboxdetail{
   position: relative;
-  left: 3%;
+  left: 2%;
   width: 70%;
   font-size: 10px;
   margin:auto;
@@ -1009,14 +1009,14 @@ font-size: 15px;
   margin: 10px;
   margin-top: 40px;
   margin-left: 1px;
-  padding: 16px;
+  padding: 20px;
   /* border-radius: 18px; */
-  width: 96%;
+  width: 95%;
   background-color: rgb(234,234,234);
 }
 .text-center-respon{
   margin-bottom: 50px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .none{
@@ -1155,7 +1155,7 @@ font-size: 15px;
       font-size: 23px;
     }
     .truncate-text {
-      margin-top: 30px;
+      /* margin-top: 10px; */
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
