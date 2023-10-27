@@ -28,17 +28,17 @@ class Login extends Component {
       
       };
       
-      const buttonStyle = {
-      borderRadius: "15px",
-      margin: "10px 0",
-      padding: "10px",
-      backgroundColor: "rgb(118, 74, 188)",
-      color: "white",
-      border: "none",
-      width: "100%",
-      cursor: "pointer",
-      textAlign: "center",
-      };
+      // const buttonStyle =
+      // borderRadius: "15px",
+      // margin: "10px 0",
+      // padding: "10px",
+      // backgroundColor: "rgb(118, 74, 188)",
+      // color: "white",
+      // border: "none",
+      // width: "100%",
+      // cursor: "pointer",
+      // textAlign: "center",
+      // };
       const move={
         marginLeft:"35px"
       }
@@ -47,10 +47,10 @@ class Login extends Component {
         fontSize:"25px"
       }
     return (
-      <div  className="align-centerr cardStyle">
+      <div  className="align-centerr cardStyle scroll-animation">
         <h2 style={move2} className="text-center">CUSTOMER LOGIN</h2>
         <form>
-          <table style={move} className="align-center">
+          <table style={move} className="align-center scroll-animation2">
             <tbody>
               <tr>
               <td class="fauser"><FaUser /></td>
@@ -62,7 +62,7 @@ class Login extends Component {
               </tr>
               <tr>
                 <td></td>
-                <td><input className='but' style={buttonStyle} type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
+                <td><input className='but buttonStylelogin'  type="submit" value="LOGIN" onClick={(e) => this.btnLoginClick(e)} /></td>
               </tr>
             </tbody>
           </table>
