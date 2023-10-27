@@ -17,7 +17,7 @@ function MySlider() {
  
 
   return (
-    <div className='swiperrespon mySwiper' >
+    <div className='swiperrespon mySwiper scroll-animation' >
       <Slider {...settings}>
         <div className='banner'>
           <img
