@@ -48,9 +48,9 @@ class Myorders extends Component {
     }
     return (
       <div>
-        <div className="align-center order fullorderlist3">
+        <div className="align-center order fullorderlist3 scroll-animation">
           <h2 className="text-center movingoderlist">ORDER LIST</h2>
-          <table  className="datatable tableorderlist2" border="1">
+          <table  className="datatable tableorderlist2 scroll-animation-right" border="1">
             <tbody>
               <tr className="datatable">
                 <th className='none'>ID</th>
