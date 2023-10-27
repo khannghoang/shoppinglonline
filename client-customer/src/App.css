@@ -313,8 +313,8 @@ width: 950px;
     display:flex;
     justify-content:space-around;
     margin:10px;
-    padding:30px;
-    width: 95%;
+    padding:25px;
+    width: 93%;
     margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
@@ -1007,11 +1007,9 @@ font-size: 15px;
   flex-direction: column;
   justify-content: space-around;
   margin: 10px;
-  margin-top: 40px;
-  margin-left: 1px;
-  padding: 20px;
-  /* border-radius: 18px; */
-  width: 95%;
+  /* margin-left: 5px;  */
+  padding: 19px; 
+  width: 91%;
   background-color: rgb(234,234,234);
 }
 .text-center-respon{
