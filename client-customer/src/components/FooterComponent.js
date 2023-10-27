@@ -41,8 +41,8 @@ class Footer extends Component {
         
       return (
 <footer>
-  <div  class="container">
-    <div  class="row test">
+  <div  class="container scroll-animation3">
+    <div  class="row test ">
      <div className='compo' >
         <h6 className='text'>About Us</h6>
         <ul  style={dot}>
