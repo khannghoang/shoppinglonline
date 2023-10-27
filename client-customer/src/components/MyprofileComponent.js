@@ -54,10 +54,10 @@ class Myprofile extends Component {
   
     if (this.context.token === '') return (<Navigate replace to='/login' />);
     return (
-      <div   className="align-centerr cardStylemyprofile">
+      <div   className="align-centerr cardStylemyprofile scroll-animation">
         <h2 style={move2} className="text-center">MY PROFILE</h2>
         <form>
-          <table className="align-centerr movemyprofile">
+          <table className="align-centerr movemyprofile scroll-animation2">
             <tbody>
               <tr>
               <td class="fauser"><FaUser /></td>
