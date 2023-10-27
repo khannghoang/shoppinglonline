@@ -29,11 +29,11 @@ class Mycart extends Component {
       // marginLeft:"33%"
     }
     return (
-      <div className="align-centerr fullorderlist">
+      <div className="align-centerr fullorderlist scroll-animation">
         <h2 style={move} className="text-centerr movingitemlist">ITEM LIST</h2>
         <table  className="datatable tableorderlist" border="1">
           <tbody className='bodycart'>
-            <tr className="datatable datatable1">
+            <tr className="datatable datatable1 scroll-animation-right ">
               <th>No.</th>
               <th className='none'>ID</th>
               <th>Name</th>
