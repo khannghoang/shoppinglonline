@@ -23,11 +23,11 @@ class ProductDetail extends Component {
     const prod = this.state.product;
     if (prod != null) {
       return (
-        <div  className="align-center fullboxdetail">
-          <h2 className="text-centerr detailrespon truncate-text">PRODUCT DETAILS</h2>
-          <figure className="caption-right">
+        <div  className="align-center fullboxdetail scroll-animation">
+          <h2 className="text-centerr detailrespon truncate-text scroll-animation2">PRODUCT DETAILS</h2>
+          <figure className="caption-right scroll-animation2">
             <img className='imagedetailrespon' src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
-            <figcaption className='figurerespon'>
+            <figcaption className='figurerespon '>
               <form >
                 <table>
                   <tbody style={font} >
