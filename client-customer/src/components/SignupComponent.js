@@ -49,10 +49,10 @@ class Signup extends Component {
         fontSize:"25px"
       }
     return (
-      <div className="align-centerr cardStyleforsignup">
+      <div className="align-centerr cardStyleforsignup scroll-animation">
         <h2 style={move2} className="text-center">SIGN-UP</h2>
         <form>
-          <table style={move} className="align-centerr signup">
+          <table style={move} className="align-centerr signup scroll-animation2">
             <tbody>
               <tr>
               <td class="fauser"><FaUser /></td>
