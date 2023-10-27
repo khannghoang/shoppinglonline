@@ -17,7 +17,7 @@ class Home extends Component {
     fontSize:"17px",
     fontWeight: "600",
       color: "#1d1d1f",
-    marginTop:"40px",
+    // marginTop:"40px",
     }
     const span={
       // fontSize:"20px"
@@ -33,7 +33,7 @@ class Home extends Component {
          <div key={item._id} className="inline fullbox scroll-animation3 ">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-            <figcaption className='textcenterespon' style={textcente} ><span  className='textcenterespon truncate-text' >{item.name}</span><br /><span  className='textcenterespon truncate-text' style={spanprice}>Price: {item.price}</span></figcaption>
+            <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p><br /><span className='textcenterespon ' style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
         </div>
       
@@ -44,7 +44,7 @@ class Home extends Component {
         <div  key={item._id} className="inline fullboxlistproduct scroll-animation3">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-            <figcaption  className='textcenterespon' style={textcente} ><span className='textcenterespon'>{item.name}</span><br /><span className='textcenterespon' style={spanprice}>Price: {item.price}</span></figcaption>
+          <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p><br /><span className='textcenterespon ' style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
         </div>
       );
