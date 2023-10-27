@@ -11,7 +11,7 @@ class Home extends Component {
     };
   }
   render() {
-  
+    
     const textcente={
       textAlign: "center",
     fontSize:"17px",
@@ -28,57 +28,48 @@ class Home extends Component {
    const spanprice={
     color:"red"
    }
-  
     const newprods = this.state.newprods.map((item) => {
       return (
-        <div key={item._id} className="inline fullbox">
+         <div key={item._id} className="inline fullbox scroll-animation3 ">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-            {/* <a href=""><img src={"data:image/jpg;base64," + item.image} width="300px" height="300px" alt="" /></a> */}
             <figcaption className='textcenterespon' style={textcente} ><span  className='textcenterespon truncate-text' >{item.name}</span><br /><span  className='textcenterespon truncate-text' style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
         </div>
+      
       );
     });
     const hotprods = this.state.hotprods.map((item) => {
       return (
-        <div  key={item._id} className="inline fullboxlistproduct">
+        <div  key={item._id} className="inline fullboxlistproduct scroll-animation3">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-
-            {/* <a href=""><img src={"data:image/jpg;base64," + item.image} width="300px" height="300px" alt="" /></a> */}
             <figcaption  className='textcenterespon' style={textcente} ><span className='textcenterespon'>{item.name}</span><br /><span className='textcenterespon' style={spanprice}>Price: {item.price}</span></figcaption>
           </figure>
         </div>
       );
     });
     return (
-      <div>
-        {/* <div className="align-center ">
-          <h2 className="text-center textcenterfornew">NEW PRODUCTS</h2>
-          {newprods}
-        </div> */}
-        <div  className="text-center text-center-respon" >
-          <h2  className="text-center">NEW PRODUCTS</h2>
+      <div >
+        <div  className="text-center text-center-respon scroll-animation2" >
+          <h2  className="text-center ">NEW PRODUCTS</h2>
         {newprods}
       </div>
         {this.state.hotprods.length > 0 ?
-          // <div className="align-center">
-          //   <h2 className="hotrespon">HOT PRODUCTS</h2>
-          //   {hotprods}
-          // </div>
-          <div className="text-center text-center-respon" >
-            <h2  className="text-center">HOT PRODUCTS</h2>
+          <div className="text-center text-center-respon scroll-animation2" >
+            <h2  className="text-center ">HOT PRODUCTS</h2>
             {hotprods}
             </div>
           : <div />}
       </div>
     );
   }
+  
   componentDidMount() {
     this.apiGetNewProducts();
     this.apiGetHotProducts();
   }
+
   // apis
   apiGetNewProducts() {
     axios.get('/api/customer/products/new').then((res) => {
