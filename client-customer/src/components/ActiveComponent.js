@@ -43,10 +43,10 @@ class Active extends Component {
         fontSize:"25px"
       }
     return (
-      <div  className="align-centerr cardStyle">
+      <div  className="align-centerr cardStyle scroll-animation">
         <h2  style={move2} className="text-center">ACTIVE ACCOUNT</h2>
         <form>
-          <table style={move} className="align-centerr">
+          <table style={move} className="align-centerr scroll-animation2">
             <tbody>
               <tr>
                 <td>ID</td>
