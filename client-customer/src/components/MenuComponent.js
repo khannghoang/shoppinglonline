@@ -51,7 +51,7 @@ class Menu extends Component {
     });
     return (
       
-      <div className='menuStyle menurespon2'  >
+      <div className='menuStyle menurespon2 '  >
          <div className='menu-toggle'>
           <label for="menu-toggle">
             <td >< AiOutlineUnorderedList /></td>
@@ -59,15 +59,15 @@ class Menu extends Component {
         </div>
         <input  type='checkbox' id='menu-toggle' hidden />
         <label className='overlay' for="menu-toggle"></label>
-        <div className='menurespon'>
+        <div className='menurespon scroll-animation'>
           <ul className='ul' style={{ padding: 0, display: 'flex' }}>
-            <li className="hoverr  " style={removemark}><Link className="menuItemStyle"  to='/'>Home</Link></li>
-              {cates}
+            <li className="hoverr " style={removemark}><Link className="menuItemStyle"  to='/'>Home</Link></li>
+             {cates} 
           </ul>
         </div>
         
         <div style={rightAlign}>
-          <form className="search" style={{ display: "flex" }}>
+          <form className="search scroll-animation" style={{ display: "flex" }}>
             <input className='hoverr inputStyle' type="search" placeholder="Enter keyword" value={this.state.txtKeyword} onChange={(e) => { this.setState({ txtKeyword: e.target.value }) }} />
             <input className='but' type="submit" value="SEARCH" style={buttonStyle} onClick={(e) => this.btnSearchClick(e)} />
           </form>
