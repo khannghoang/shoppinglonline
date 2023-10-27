@@ -22,7 +22,71 @@
   transform: translate(2px, 2px);
 
 }
+.buttonStylelogin{
+    border-Radius: 15px;
+      margin: 10px 0;
+      padding: 10px;
+      background-Color: rgb(118, 74, 188);
+      color: white;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      text-Align: center;
+   
+}
+@keyframes scrollUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+.scroll-animation {
+  animation: scrollUp 1s;
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.scroll-animation2 {
+  animation: scrollUp 2s;
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.scroll-animation3 {
+  animation: scrollUp 3s;
+}
+@keyframes scrollRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.scroll-animation-right {
+  animation: scrollRight 1s;
+}
 .hoverr{
   color:rgb(92,92,93);
   text-decoration: none;
@@ -185,7 +249,7 @@ tr:not(:first-child):hover.datatable:hover {
   background-color: #eaeaea;
   padding: 10px;
   list-style-type: none;
-  width: 1430px,
+  /* width: 100%; */
   }
 
 .mySwiper{
@@ -249,7 +313,9 @@ width: 950px;
     display:flex;
     justify-content:space-around;
     margin:10px;
-    padding:25px;
+    padding:30px;
+    width: 95%;
+    margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
   .fullorderlist{
@@ -337,7 +403,7 @@ width: 950px;
         font-size: 17px;
         color: red;
       }
-      .buttonStyle {
+      .buttonStyle{
        border-radius: 5px;
        margin: 10px 0;
        padding: 10px;
@@ -396,6 +462,7 @@ width: 950px;
           .movemyprofile{
             margin-left:45px;
           }
+        
       /* .imagerespon{
         width: 250px;
         height: 250px;
@@ -408,6 +475,59 @@ width: 950px;
 
 
 @media (max-width: 992px) and (min-width:768px){
+  @keyframes scrollUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .scroll-animation {
+    animation: scrollUp 1s;
+  }
+  @keyframes scrollRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .scroll-animation2 {
+    animation: scrollUp 2s;
+  }
+  @keyframes scrollRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .scroll-animation3 {
+    animation: scrollUp 3s;
+  }
+  @keyframes scrollRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .scroll-animation-right {
+    animation: scrollRight 1s;
+  }
   .compo{
     margin-right:70px;
     margin-top: 30px;
@@ -694,6 +814,7 @@ font-size: 15px;
 }
 
 @media (max-width: 767px){
+ 
   .menuItemStyle{
     margin-right: 20px;
     color: #e0e0e0; 
@@ -828,6 +949,8 @@ font-size: 15px;
   font-weight: 700;
 }
 .fullboxdetail{
+  position: relative;
+  left: 3%;
   width: 70%;
   font-size: 10px;
   margin:auto;
@@ -893,7 +1016,7 @@ font-size: 15px;
 }
 .text-center-respon{
   margin-bottom: 50px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .none{
@@ -964,6 +1087,8 @@ font-size: 15px;
 }
 
 .fullboxlistproduct{
+  position: relative;
+  left: 2%;
   width: 40%;
   margin: 10px;
   padding: 5px;
@@ -1058,6 +1183,59 @@ font-size: 15px;
       }
       .movemyprofile{
         margin-left:0px;
+      }
+      @keyframes scrollUp {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      
+      .scroll-animation {
+        animation: scrollUp 1s;
+      }
+      @keyframes scrollRight {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .scroll-animation2 {
+        animation: scrollUp 2s;
+      }
+      @keyframes scrollRight {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .scroll-animation3 {
+        animation: scrollUp 3s;
+      }
+      @keyframes scrollRight {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .scroll-animation-right {
+        animation: scrollRight 1s;
       }
     
 } 
