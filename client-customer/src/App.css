@@ -314,7 +314,7 @@ width: 950px;
     justify-content:space-around;
     margin:10px;
     padding:25px;
-    width: 93%;
+    width: 96%;
     margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
@@ -810,10 +810,16 @@ font-size: 15px;
       .movemyprofile{
         margin-left:45px;
       }
+      .truncate-text {
+        /* margin-top: 10px; */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
  
   .menuItemStyle{
     margin-right: 20px;
@@ -960,6 +966,7 @@ font-size: 15px;
   height: 39.41176rem;
   background-color:white;
   margin-top: 50px;
+  margin-bottom: 20%;
   /* margin-left:185px; */
 }
 .but{
@@ -1014,7 +1021,7 @@ font-size: 15px;
 }
 .text-center-respon{
   margin-bottom: 50px;
-  margin-left: 5px;
+  margin-left: 9px;
 }
 
 .none{
@@ -1237,3 +1244,47 @@ font-size: 15px;
       }
     
 } 
+/* @media (max-width: 320px) {
+  .text-center-respon {
+    margin-bottom: 50px;
+    margin-left: -44px;
+    position: relative;
+    left: 11%;
+  }
+
+  
+} */
+@media (max-width: 372px) {
+  .text-center-respon {
+    margin-bottom: 50px;
+    margin-left: -30px;
+    position: relative;
+    left: 7%;
+  }
+  .fullbox{
+    width: 125px;
+  }
+}
+@media (max-width: 280px) {
+  .text-center-respon {
+    margin-bottom: 50px;
+    margin-left: -30px;
+    position: relative;
+    left: 8%;
+  }
+  .fullbox{
+    width: 115px;
+  }
+  .mySwiper {
+    left: 3%;
+    position: relative;
+    width: 246px;
+    height: 150px;
+    margin: auto;
+}
+.imagerespon {
+  margin: -13px;
+  width: 77px;
+  height: 91px;
+}
+}
