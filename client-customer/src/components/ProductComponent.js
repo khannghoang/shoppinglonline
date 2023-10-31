@@ -41,7 +41,10 @@ class Product extends Component {
     return (
       <div style={marginfor} className="text-center text-center-respon scroll-animation" >
         <h2 style={marginfor2} className="text-center">LIST PRODUCTS</h2>
+        <div className='wrapper'>
         {prods}
+        </div>
+        
       </div>
     );
   }
