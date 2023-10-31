@@ -41,7 +41,7 @@ class Home extends Component {
     });
     const hotprods = this.state.hotprods.map((item) => {
       return (
-        <div  key={item._id} className="inline fullboxlistproduct scroll-animation3">
+        <div  key={item._id} className="inline fullbox scroll-animation3">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
           <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p><br /><span className='textcenterespon ' style={spanprice}>Price: {item.price}</span></figcaption>
@@ -51,14 +51,19 @@ class Home extends Component {
     });
     return (
       <div >
-        <div  className="text-center text-center-respon scroll-animation2" >
-          <h2  className="text-center ">NEW PRODUCTS</h2>
-        {newprods}
+        <div className="text-center text-center-respon scroll-animation2" >
+          <h2 className="text-center ">NEW PRODUCTS</h2>
+          <div className=' wrapper'>
+          {newprods}
+          </div>
+       
       </div>
         {this.state.hotprods.length > 0 ?
           <div className="text-center text-center-respon scroll-animation2" >
             <h2  className="text-center ">HOT PRODUCTS</h2>
-            {hotprods}
+            <div className=' wrapper'>
+              {hotprods}
+              </div>
             </div>
           : <div />}
       </div>
