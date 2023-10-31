@@ -16,7 +16,7 @@ router.get('/categories', async function (req, res) {
 });
 // product
 router.get('/products/new', async function (req, res) {
-  const products = await ProductDAO.selectTopNew(3);
+  const products = await ProductDAO.selectTopNew(6);
   res.json(products);
 });
 router.get('/products/hot', async function (req, res) {
