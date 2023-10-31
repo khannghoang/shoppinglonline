@@ -13,6 +13,7 @@ import Mycart from './MycartComponent';
 import Myorders from './MyordersComponent';
 import PrivateRoute from './PrivateRoute';
 import Slider from './slider';
+import Footer from './FooterComponent';
 class Main extends Component {
   render() {
     return (
@@ -25,14 +26,15 @@ class Main extends Component {
           <Route path='/product/category/:cid' element={<PrivateRoute><Product /></PrivateRoute>} />
           <Route path='/product/search/:keyword' element={<PrivateRoute><Product /></PrivateRoute>} />
           <Route path='/product/:id' element={<PrivateRoute><ProductDetail /></PrivateRoute>} />
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/active' element={<Active />} />
-          <Route path='/login' element={<Login />}/>
+          <Route path='/signup' element={<PrivateRoute><Signup /></PrivateRoute>} />
+          <Route path='/active' element={<PrivateRoute><Active /></PrivateRoute>} />
+          <Route path='/login' element={<PrivateRoute><Login /></PrivateRoute>}/>
           <Route path='/myprofile' element={<PrivateRoute><Myprofile /></PrivateRoute>} />
           <Route path='/mycart' element={<PrivateRoute><Mycart /></PrivateRoute>} />
           <Route path='/myorders' element={<PrivateRoute><Myorders /></PrivateRoute>} />
+
         </Routes>
-        
+     
       </div>
     );
   }
