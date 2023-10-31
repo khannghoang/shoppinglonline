@@ -309,6 +309,9 @@ border: none
     margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
+    .container{
+      margin-top: 10%;
+    }
   .fullorderlist{
       border-Radius: 15px;
       padding: 20px;
@@ -648,8 +651,9 @@ border: none
   margin:auto;
 }
 .text-centerr{
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
+
 .hotrespon{
   position: relative;
   right: 11%;
@@ -688,8 +692,11 @@ border: none
   box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
   margin-top: 60px;
   height: 448px;
-  margin-bottom: 60px;
-  margin-left: 73px;
+  position: relative;
+  left: 2%;
+  /* margin-bottom: 60px; */
+  /* margin-left: 73px; */
+  
 }
 .tableorderlist{
   border: 1px solid #fff;
@@ -1279,13 +1286,17 @@ left: 1%;
   
 } */
 @media (max-width: 372px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 150px 150px ;
-    /* grid-template-rows: 250px 250px; */
-   justify-content: center;
-   position: relative;
-   /* left: 2%; */
+  .cardStyle {
+    border-radius: 15px;
+    padding: 30px;
+    background-color: white;
+    width: 210px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    margin-top: 20%;
+    position: relative;
+    left: 4%;
+  
 }
   .text-center-respon {
     margin-bottom: 50px;
@@ -1349,8 +1360,34 @@ left: 1%;
   .scroll-animation-right {
     animation: scrollRight 1s;
   }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 150px 150px ;
+    /* grid-template-rows: 250px 250px; */
+   justify-content: center;
+   /* position: relative;
+   left: 2%; */
+}
 }
 @media (min-width: 280px) and (max-width:300px) {
+  .tableorderlist{
+    border: 1px solid #fff;
+      margin:auto;
+      width:290px;
+      font-size:8px;
+      margin-bottom:10%;
+  }
+  .fullorderlist{
+    border-Radius: 15px;
+    padding: 20px;
+    background-color: white;
+    width: 230px;
+    margin:  auto;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    margin-top:20px;
+    height:570px;
+    margin-bottom: 50px;
+}
   .wrapper {
     display: grid;
     grid-template-columns: 147px 130px ;
