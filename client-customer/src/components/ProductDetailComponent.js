@@ -8,8 +8,9 @@ class ProductDetail extends Component {
     super(props);
     this.state = {
       product: null,
-      txtQuantity: 1
+      txtQuantity: 1,
     };
+  
   }
   render() {
     const font={
@@ -29,12 +30,12 @@ class ProductDetail extends Component {
             <img className='imagedetailrespon' src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
             <figcaption className='figurerespon '>
               <form >
-                <table>
+                <table >
                   <tbody style={font} >
-                    <tr >
+                    {/* <tr >
                       <td align="right">ID:</td>
                       <td style={font2}>{prod._id}</td>
-                    </tr>
+                    </tr> */}
                     <tr >
                       <td align="right">NAME:</td>
                       <td style={font2}>{prod.name}</td>
@@ -47,6 +48,14 @@ class ProductDetail extends Component {
                       <td align="right">CATEGORY:</td>
                       <td style={font2}>{prod.category.name}</td>
                     </tr>
+                    <tr>
+                      <td align="right">Description:</td>
+                        <td style={font2}>
+                       <div className="description-container">
+                        {prod.description}
+                       </div>
+                       </td>
+                  </tr>
                     <tr>
                       <td align="right">QUANTITY:</td>
                       <td ><input type="number" min="1" max="99"  value={this.state.txtQuantity} onChange={(e) => { this.setState({ txtQuantity: e.target.value }) }}   /></td>
@@ -66,7 +75,7 @@ class ProductDetail extends Component {
     
     return (<div />);
   }
-  
+ 
   componentDidMount() {
     const params = this.props.params;
     this.apiGetProduct(params.id);
