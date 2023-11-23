@@ -58,6 +58,7 @@ router.delete('/categories/:id', JwtUtil.checkToken, async function (req, res) {
   const result = await CategoryDAO.delete(_id);
   res.json(result);
 });
+// Đoạn code liên quan đến sản phẩm
 router.get('/products', JwtUtil.checkToken, async function (req, res) {
   // pagination
   const noProducts = await ProductDAO.selectByCount();
@@ -75,26 +76,30 @@ router.get('/products', JwtUtil.checkToken, async function (req, res) {
 router.post('/products', JwtUtil.checkToken, async function (req, res) {
   const name = req.body.name;
   const price = req.body.price;
+  const description = req.body.description; // Thêm thuộc tính "description"
   const cid = req.body.category;
   const image = req.body.image;
   const now = new Date().getTime(); // milliseconds
   const category = await CategoryDAO.selectByID(cid);
-  const product = { name: name, price: price, image: image, cdate: now, category: category };
+  const product = { name: name, price: price, description: description, image: image, cdate: now, category: category }; // Thêm "description" vào object
   const result = await ProductDAO.insert(product);
   res.json(result);
 });
+
 router.put('/products/:id', JwtUtil.checkToken, async function (req, res) {
   const _id = req.params.id;
   const name = req.body.name;
   const price = req.body.price;
+  const description = req.body.description; // Thêm thuộc tính "description"
   const cid = req.body.category;
   const image = req.body.image;
   const now = new Date().getTime(); // milliseconds
   const category = await CategoryDAO.selectByID(cid);
-  const product = { _id: _id, name: name, price: price, image: image, cdate: now, category: category };
+  const product = { _id: _id, name: name, price: price, description: description, image: image, cdate: now, category: category }; // Thêm "description" vào object
   const result = await ProductDAO.update(product);
   res.json(result);
 });
+
 router.delete('/products/:id', JwtUtil.checkToken, async function (req, res) {
   const _id = req.params.id;
   const result = await ProductDAO.delete(_id);
