@@ -24,6 +24,7 @@ const ProductSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
   name: String,
   price: Number,
+  description: String, // Đây là trường "description"
   image: String,
   cdate: Number,
   category: CategorySchema
