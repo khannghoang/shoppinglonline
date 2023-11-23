@@ -14,12 +14,16 @@ import Myorders from './MyordersComponent';
 import PrivateRoute from './PrivateRoute';
 import Slider from './slider';
 import Footer from './FooterComponent';
+import HeaderComponent from './HeaderComponent';
+import Shop from './shop';
+import Gmap from './GmapComponent';
 class Main extends Component {
   render() {
     return (
       <div className="body-customer">
-        <Menu />
-        <Inform />
+        {/* <Menu /> */}
+        <HeaderComponent/>
+        {/* <Inform /> */}
         <Routes>
           <Route path='/' element={<PrivateRoute><Navigate replace to='/home' /></PrivateRoute>} />
           <Route path='/home' element={<PrivateRoute><Slider /><Home /></PrivateRoute>} />
@@ -32,7 +36,8 @@ class Main extends Component {
           <Route path='/myprofile' element={<PrivateRoute><Myprofile /></PrivateRoute>} />
           <Route path='/mycart' element={<PrivateRoute><Mycart /></PrivateRoute>} />
           <Route path='/myorders' element={<PrivateRoute><Myorders /></PrivateRoute>} />
-
+          <Route path='/shop' element={<PrivateRoute><Shop /></PrivateRoute>} />
+          <Route path='/gmap' element={<PrivateRoute><Gmap /></PrivateRoute> } />
         </Routes>
      
       </div>
