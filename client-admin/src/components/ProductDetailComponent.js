@@ -11,6 +11,7 @@ class ProductDetail extends Component {
       txtID: '',
       txtName: '',
       txtPrice: 0,
+      txtDescription: '',
       cmbCategory: '',
       imgProduct: '',
     };
@@ -82,12 +83,16 @@ class ProductDetail extends Component {
                 <td><input style={detail} type="text" value={this.state.txtID} onChange={(e) => { this.setState({ txtID: e.target.value }) }} readOnly={true} /></td>
               </tr>
               <tr>
-                <td>Name</td>
+                <td>Tên</td>
                 <td><input style={detail} type="text" value={this.state.txtName} onChange={(e) => { this.setState({ txtName: e.target.value }) }} /></td>
               </tr>
               <tr>
-                <td>Price</td>
+                <td>Giá</td>
                 <td><input style={detail} type="text" value={this.state.txtPrice} onChange={(e) => { this.setState({ txtPrice: e.target.value }) }} /></td>
+              </tr>
+              <tr>
+                <td>Mô Tả</td>
+                <td><input style={detail} type="text" value={this.state.txtDescription} onChange={(e) => { this.setState({ txtDescription: e.target.value }) }} /></td>
               </tr>
               <tr>
                 <td>Image</td>
@@ -125,6 +130,7 @@ class ProductDetail extends Component {
       this.setState({
         txtID: this.props.item._id,
         txtName: this.props.item.name,
+        txtDescription: this.props.item.description,
         txtPrice: this.props.item.price,
         cmbCategory: this.props.item.category._id,
         imgProduct: 'data:image/jpg;base64,' + this.props.item.image
@@ -146,10 +152,11 @@ class ProductDetail extends Component {
     e.preventDefault();
     const name = this.state.txtName;
     const price = parseInt(this.state.txtPrice);
+    const description = this.state.txtDescription;
     const category = this.state.cmbCategory;
     const image = this.state.imgProduct.replace(/^data:image\/[a-z]+;base64,/, ''); // remove "data:image/...;base64,"
     if (name && price && category && image) {
-      const prod = { name: name, price: price, category: category, image: image };
+      const prod = { name: name, price: price,description:description, category: category, image: image };
       this.apiPostProduct(prod);
     } else {
       alert('Please input name and price and category and image');
@@ -197,10 +204,11 @@ class ProductDetail extends Component {
     const id = this.state.txtID;
     const name = this.state.txtName;
     const price = parseInt(this.state.txtPrice);
+    const description = this.state.txtDescription;
     const category = this.state.cmbCategory;
     const image = this.state.imgProduct.replace(/^data:image\/[a-z]+;base64,/, ''); // remove "data:image/...;base64,"
     if (id && name && price && category && image) {
-      const prod = { name: name, price: price, category: category, image: image };
+      const prod = { name: name, price: price, description: description, category: category, image: image };
       this.apiPutProduct(id, prod);
     } else {
       alert('Please input id and name and price and category and image');
