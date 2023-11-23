@@ -1,0 +1,66 @@
+/* CSS cho HeaderComponent */
+
+.header {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+  }
+  
+  .header-left {
+    /* CSS cho phần bên trái của header (Trang chủ, Trang sản phẩm, Giỏ hàng) */
+    text-decoration: none;
+    color: #fff;
+  }
+  .style{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  
+  .menu-dropdown {
+    position: relative;
+    z-index: 1; /* Đặt z-index để đảm bảo menu dropdown hiển thị trên các phần khác */
+    margin-right: 20px; /* Khoảng cách giữa menu dropdown và các phần khác */
+  }
+  
+  /* .menu-content {
+   
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    top: 100%;
+    left: 0;
+    z-index: 2; 
+    width: 300%;
+    border-radius: 10px;
+    padding: 10px
+
+  } */
+ .spacing{
+  margin-left: 5px;
+ }
+ 
+  
+  .menu-dropdown:hover .menu-content {
+    display: block; /* Hiển thị menu dropdown khi di chuột qua menu-dropdown */
+  }
+  
+  /* Các quy tắc CSS khác theo nhu cầu của bạn */
+  .Wrappermenu {
+
+    padding: 10px 120px;
+    background-color: rgb(26,148,255);
+	align-items: center
+  }
+
+  .magni{
+    color: white;
+    font-weight: 500;
+  }
+
+  
