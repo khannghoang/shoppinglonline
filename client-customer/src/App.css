@@ -258,7 +258,7 @@ tr:not(:first-child):hover.datatable:hover {
 .mySwiper{
   width: 95%;
     height: 550px;
-  margin:auto;
+  margin:4% auto;
   margin-bottom: 5%;
 border: none
  }
@@ -307,7 +307,7 @@ border: none
     justify-content:space-around;
     margin:10px;
     padding:25px;
-    width: 96%;
+    width: 96.8%;
     margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
@@ -374,7 +374,7 @@ border: none
     padding:30px;
     background-color:white;
     width:300px;
-    margin:0 auto;
+    margin:0 auto 100px auto;
     box-shadow:0px 0px 10px 2px rgba(0,0,0,0.1);
     margin-top:8%;
     }
@@ -531,6 +531,15 @@ border: none
         /* margin-top: 5px; */
         /* height: 100%; */
       }
+       .menu-content::before{
+        content:"";
+        border-width: 20px 27px;
+        border-style: solid;
+        border-color:transparent transparent #ffff transparent;
+        position: absolute;
+        right: 124px;
+        top: -30px;
+        }
       .header-right {
         display: flex;
         justify-content: flex-end;
@@ -565,7 +574,7 @@ border: none
         width: 250px;
         background: #f2f2f2;
         /* padding: 20px; */
-        height: 119vh;
+        height: 140vh;
       }
       .productList{
         flex: 1;
@@ -605,6 +614,15 @@ border: none
 */
 
 @media (max-width: 1277px) and (min-width:768px){
+  .menu-content::before{
+    content:"";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color:transparent transparent #ffff transparent;
+    position: absolute;
+    right: 144px;
+    top: -30px;
+    }
   .iframe{
     margin-left: 20px;
     width: 600px;
@@ -620,7 +638,7 @@ border: none
   .sidebar {
     padding: 5px;
     width: 21px;
-    /* background: #ffffff; */
+    background: #ffffff;
     height: 100vh;
   }
   .flex-item span{
@@ -917,6 +935,8 @@ display: none;  }
     width: 100% ;
   }
   .menu-toggle2{
+    top: 65%;
+    position: relative;
     display: block;
     font-size: 2.5rem ;
   }
@@ -955,7 +975,7 @@ display: none;  }
  .mySwiper{
   width: 100%;
     height: 250px;
-  margin:auto;
+  margin:4% auto;
   margin-bottom: 5%;
   position: relative;
   left: 2%;
@@ -1142,7 +1162,7 @@ font-size: 15px;
       margin: 10px;
       margin-top: 165px;
       /* margin-left: 1px; */
-      padding: 37px;
+      padding: 45px;
       /* border-radius: 18px; */
       width: 97%;
       background-color: rgb(234,234,234);
@@ -1170,11 +1190,21 @@ font-size: 15px;
 }
 
 @media (max-width: 767px) {
+  .menu-content::before{
+    content:"";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color:transparent transparent #ffff transparent;
+    position: absolute;
+    right: 94px;
+    top: -30px;
+    }
 
   .moving{display: none;}
   .moving2{display: block;
   margin-top: 25px;}
-  .menu-content{display: none;
+  .menu-content
+  {display: none;
     position: absolute;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -1418,7 +1448,7 @@ font-size: 15px;
  .mySwiper{
   width: 95%;
     height: 150px;
-  margin:auto;
+  margin:4% auto;
   margin-bottom: 5%;
 border: none;
 position: relative;
@@ -1530,7 +1560,7 @@ left: 1%;
   margin: 10px;
   /* margin-left: 5px;  */
   padding: 19px; 
-  width: 91%;
+  width: 100%;
   background-color: rgb(234,234,234);
 }
 .text-center-respon{
@@ -1758,10 +1788,15 @@ left: 1%;
       }
 
       .sidebar {
-        width: 15px;
-        background: #f2f2f2;
+        width: 27px;
+        background: #ffffff;
         /* padding: 20px; */
         height: 100vh;}
+
+        .menu-toggle2{
+          position: relative;
+          top: 55%;
+        }
     
 } 
 /* @media (max-width: 320px) {
@@ -1875,7 +1910,7 @@ div.menurespon2{
   margin: 10px;
   /* margin-left: 5px; */
   padding: 19px;
-  width: 98%;
+  width: 100%;
   background-color: rgb(234,234,234);}
 }
 @media (min-width: 280px) and (max-width:300px) {
@@ -1918,7 +1953,7 @@ div.menurespon2{
     position: relative;
     width: 246px;
     height: 150px;
-    margin: auto;
+    margin: 4% auto;
 }
 .imagerespon {
   margin: -13px;
