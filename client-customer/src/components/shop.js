@@ -73,7 +73,9 @@ class Shop extends Component {
       },
       headerBar: {
         marginBottom: '10px',
-        padding:'10px'
+        padding:'10px',
+        fontweight:'700',
+        
       },
       textCenter: {
         textAlign: 'center',
@@ -132,7 +134,7 @@ class Shop extends Component {
           <input type="checkbox" id="menu-toggle2" hidden />
           <label className="overlay" htmlFor="menu-toggle2"></label>
           <div className="menurespon1 scroll-animation">
-            <ul className="ul " style={{ padding: 0, listStyleType: 'none' }}>
+            <ul className="ul " style={{ padding: "14px", listStyleType: 'none' }}>
               <li className="hoverr " style={styles.headerBar}>
                 <strong>Danh mục sản phẩm</strong>
               </li>
@@ -142,7 +144,7 @@ class Shop extends Component {
         </div>
 
         <div className='productList'>
-          <h2 className="text-center" style={styles.textCenter}>
+          <h2 className="text-center" >
             {isCategorySelected ? 'LIST PRODUCTS' : 'NEW PRODUCTS'}
           </h2>
           <div className="wrapper">{prods}</div>
