@@ -60,7 +60,7 @@ class HeaderComponent extends Component {
 
     return (
      
-      <div className="header menuStyle menurespon2">
+      <div className="header menuStyle menurespon2 scroll-animation">
          <div className='menu-toggle'>
           <label for="menu-toggle">
             <td >< AiOutlineUnorderedList /></td>
@@ -82,10 +82,11 @@ class HeaderComponent extends Component {
              <Link className="hoverr style " to='/mycart'>Giỏ hàng</Link> <b className='moving' >{this.context.mycart.length}</b>
             </div>  
             <div className='moving'>
-              <div className="gmapmove hoverr style"><Link className="gmapmove" to='/gmap'><IoLocationSharp /></Link></div> 
+            <div className="gmapmove hoverr style"><Link className="gmapmove" to='/gmap'>Vị trí</Link></div> 
             </div>
             <div className='moving2'>
-              <div className="gmapmove hoverr style"><Link className="gmapmove" to='/gmap'>Vị trí</Link></div> 
+              <div className="gmapmove hoverr style"><Link className="gmapmove" to='/gmap'><IoLocationSharp /></Link></div> 
+
             </div> 
           </div>
         </div>
