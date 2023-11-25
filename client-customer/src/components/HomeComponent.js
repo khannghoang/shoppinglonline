@@ -28,13 +28,31 @@ class Home extends Component {
    const spanprice={
     color:"red"
    }
+   const buttonStyle = {
+    position: 'relative',
+    right: '3%',
+    borderRadius: "5px",
+    margin: "10px 0",
+    padding: "12px",
+    backgroundColor: "#0047b3",
+    color: "white",
+    border: "none",
+    width: "45%", // Giảm chiều rộng để chia sẻ không gian với ô tìm kiếm
+    cursor: "pointer",
+    textAlign: "center",
+    
+  };
     const newprods = this.state.newprods.map((item) => {
       return (
          <div key={item._id} className="inline fullbox scroll-animation3 ">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}>
             <img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-            <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p><br /><span className='textcenterespon ' style={spanprice}>Price: {item.price}</span></figcaption>
+
+            <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p>
+            <br /><span className='textcenterespon ' style={spanprice}>{item.price} đ</span><br/>
+            <Link  to={'/product/' + item._id}><button className='but buttonStyle' >CHI TIẾT </button></Link>
+            </figcaption>
           </figure>
         </div>
       
@@ -45,7 +63,10 @@ class Home extends Component {
         <div  key={item._id} className="inline fullbox scroll-animation3">
           <figure style={margin}>
           <Link  to={'/product/' + item._id}><img className='imagerespon' src={`data:image/jpg;base64,${item.image}`} width="250px" height="250px" alt="" /></Link>
-          <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p><br /><span className='textcenterespon ' style={spanprice}>Price: {item.price}</span></figcaption>
+          <figcaption className='textcenterespon' style={textcente} ><p className='textcenterespon  truncate-text' >{item.name}</p>
+            <br /><span className='textcenterespon ' style={spanprice}>{item.price} đ</span><br/>
+            <Link  to={'/product/' + item._id}><button className='but buttonStyle' >CHI TIẾT </button></Link>
+            </figcaption>
           </figure>
         </div>
       );
@@ -53,7 +74,7 @@ class Home extends Component {
     return (
       <div >
         <div className="text-center text-center-respon scroll-animation2" >
-          <h2 className="text-center ">NEW PRODUCTS</h2>
+          <h2 className="text-center ">SẢN PHẨM MỚI</h2>
           <div className=' wrapper'>
           {newprods}
           </div>
@@ -61,7 +82,7 @@ class Home extends Component {
       </div>
         {this.state.hotprods.length > 0 ?
           <div className="text-center text-center-respon scroll-animation2" >
-            <h2  className="text-center ">HOT PRODUCTS</h2>
+            <h2  className="text-center ">BEST SELLER</h2>
             <div className=' wrapper'>
               {hotprods}
               </div>
