@@ -17,6 +17,7 @@ import Footer from './FooterComponent';
 import HeaderComponent from './HeaderComponent';
 import Shop from './shop';
 import Gmap from './GmapComponent';
+import TawkMessenger from './TawkMessengerComponent';
 class Main extends Component {
   render() {
     return (
@@ -39,7 +40,7 @@ class Main extends Component {
           <Route path='/shop' element={<PrivateRoute><Shop /></PrivateRoute>} />
           <Route path='/gmap' element={<PrivateRoute><Gmap /></PrivateRoute> } />
         </Routes>
-     
+        <TawkMessenger />
       </div>
     );
   }
