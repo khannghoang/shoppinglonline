@@ -4,7 +4,7 @@
   display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #1a94ff;
     color: white;
     padding: 8px;
   }
@@ -26,6 +26,7 @@
     z-index: 1; /* Đặt z-index để đảm bảo menu dropdown hiển thị trên các phần khác */
     margin-right: 20px; /* Khoảng cách giữa menu dropdown và các phần khác */
   }
+  
   
   /* .menu-content {
    
