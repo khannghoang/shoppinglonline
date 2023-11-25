@@ -44,7 +44,7 @@ class HeaderComponent extends Component {
       borderRadius: "5px",
       margin: "10px 0",
       padding: "12px",
-      backgroundColor: "rgb(118, 74, 188)",
+      backgroundColor: "#0047b3",
       color: "white",
       border: "none",
       width: "35%", // Giảm chiều rộng để chia sẻ không gian với ô tìm kiếm
@@ -97,15 +97,15 @@ class HeaderComponent extends Component {
               {isLoggedIn ? (
                 <>
                <a className='contentcss'>Hello<b className='spacing'>{customer.name}</b></a>
-                  <Link className='contentcss hoverr' to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link>
-                  <Link  className='contentcss hoverr ' to="/myprofile">My Profile</Link>
-                  <Link className="contentcss hoverr" to='/myorders'><td >Đơn đã mua</td></Link>
+                  <Link className='contentcss hover-effect' to='/home' onClick={() => this.lnkLogoutClick()}>Logout</Link>
+                  <Link  className='contentcss hover-effect ' to="/myprofile">My Profile</Link>
+                  <Link className="contentcss hover-effect" to='/myorders'><td >Đơn đã mua</td></Link>
                 </>
               ) : (
                 <>
-                  <Link  className='contentcss hoverr' to="/login">Login</Link>
-                  <Link to="/signup"  className='contentcss hoverr'>Sign-up</Link> {' '}
-                  <Link  className='contentcss hoverr' to="/active">Active</Link>  
+                  <Link  className='contentcss hover-effect' to="/login">Login</Link>
+                  <Link to="/signup"  className='contentcss hover-effect'>Sign-up</Link> {' '}
+                  <Link  className='contentcss hover-effect' to="/active">Active</Link>  
                 </>
               )}
             </div>
