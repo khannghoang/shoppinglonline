@@ -47,7 +47,7 @@ class Footer extends Component {
               <h6 className='text'>About Us</h6>
               <ul style={dot}>
                 <li >
-                  <p style={text2}> <span><FaLocationDot /></span> 1/11/52 Hẻm 1 Đặng Thùy Trâm, Bình Thạnh, Hồ Chí Minh</p>
+                <Link className="gmapmove" to='/gmap'> <p style={text2}> <span><FaLocationDot /></span> 1/11/52 Hẻm 1 Đặng Thùy Trâm, Bình Thạnh, Hồ Chí Minh</p></Link> 
                 </li>
                 <li>
                   <p style={text2} ><span><FaPhone /></span> 0123456789</p>
