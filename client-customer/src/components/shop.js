@@ -103,7 +103,7 @@ class Shop extends Component {
       <li key={item._id} className="" style={{ ...styles.listItem, ...styles.headerBar }}>
         <Link className="menuItemStyle hover-effect" to="#" onClick={() => this.handleCategoryClick(item._id)}>
           {item.name}
-        </Link>
+        </Link> 
       </li>
     ));
 
@@ -116,7 +116,9 @@ class Shop extends Component {
           <figcaption style={styles.textCenter}>
             <div className="spanrespon truncate-text">{item.name}</div>
             <br />
-            <span className="spanpricerespon  truncate-text ">Price: {item.price}</span>
+            <span className="spanpricerespon  truncate-text ">{item.price} đ</span><br />
+            {/* <br /><span className='textcenterespon ' style={spanprice}>{item.price} đ</span><br/> */}
+            <Link  to={'/product/' + item._id}><button className='but buttonStyle' >CHI TIẾT </button></Link>
           </figcaption>
         </figure>
       </div>
@@ -145,7 +147,7 @@ class Shop extends Component {
 
         <div className='productList'>
           <h2 className="text-center" >
-            {isCategorySelected ? 'LIST PRODUCTS' : 'NEW PRODUCTS'}
+            {isCategorySelected ? 'DANH SÁCH SẢN PHẨM' : 'SẢN PHẨM MỚI'}
           </h2>
           <div className="wrapper">{prods}</div>
         </div>
