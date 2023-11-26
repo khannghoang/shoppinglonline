@@ -53,9 +53,9 @@ class Product extends Component {
     return (
       <div  className="text-center text-center-respon scroll-animation" >
         <h2  className="text-center">DANH SÁCH SẢN PHẨM</h2>
-        <div className='pp'>
+        <div className='wrapper '>
         {this.state.products.length > 0 ? prods :
-          <p>KHÔNG TÌM THẤY BẤT KỲ KẾT QUẢ NÀO VỚI TỪ KHÓA TRÊN.</p>
+          <p className='pp'>KHÔNG TÌM THẤY BẤT KỲ KẾT QUẢ NÀO VỚI TỪ KHÓA TRÊN.</p>
         }
         </div>
       </div>
