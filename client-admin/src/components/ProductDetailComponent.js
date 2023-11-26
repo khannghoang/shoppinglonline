@@ -34,6 +34,7 @@ class ProductDetail extends Component {
       margin: "0 auto",
       boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
       marginTop:"20px",
+      height:"620px"
       // marginRight:
     }
     const detail={
@@ -159,7 +160,7 @@ class ProductDetail extends Component {
       const prod = { name: name, price: price,description:description, category: category, image: image };
       this.apiPostProduct(prod);
     } else {
-      alert('Please input name and price and category and image');
+      alert('Hãy nhập tên, giá, mô tả và hình ảnh để thêm sản phẩm');
     }
   }
   // apis
@@ -191,10 +192,10 @@ class ProductDetail extends Component {
     axios.post('/api/admin/products', prod, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('THÊM THÀNH CÔNG');
         this.apiGetProducts();
       } else {
-        alert('SORRY BABY!');
+        alert('THÊM KHÔNG THÀNH CÔNG');
       }
     });
   }
@@ -211,7 +212,7 @@ class ProductDetail extends Component {
       const prod = { name: name, price: price, description: description, category: category, image: image };
       this.apiPutProduct(id, prod);
     } else {
-      alert('Please input id and name and price and category and image');
+      alert('Hãy nhập tên, giá, mô tả và hình ảnh để cập nhật sản phẩm');
     }
   }
   // apis
@@ -220,22 +221,22 @@ class ProductDetail extends Component {
     axios.put('/api/admin/products/' + id, prod, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('CẬP NHẬT THÀNH CÔNG!');
         this.apiGetProducts();
       } else {
-        alert('SORRY BABY!');
+        alert('CẬP NHẬT KHÔNG THÀNH CÔNG!');
       }
     });
   }
    // event-handlers
    btnDeleteClick(e) {
     e.preventDefault();
-    if (window.confirm('ARE YOU SURE?')) {
+    if (window.confirm('BẠN CHẮC CHẮN MUỐN XÓA')) {
       const id = this.state.txtID;
       if (id) {
         this.apiDeleteProduct(id);
       } else {
-        alert('Please input id');
+        alert('HÃY NHẬP ID');
       }
     }
   }
@@ -245,10 +246,10 @@ class ProductDetail extends Component {
     axios.delete('/api/admin/products/' + id, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('XÓA THÀNH CÔNG!');
         this.apiGetProducts();
       } else {
-        alert('SORRY BABY!');
+        alert('XÓA KHÔNG THÀNH CÔNG');
       }
     });
   }
