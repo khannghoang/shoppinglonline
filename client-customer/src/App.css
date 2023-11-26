@@ -307,7 +307,7 @@ border: none
     justify-content:space-around;
     margin:10px;
     padding:25px;
-    width: 96.8%;
+    width: 95.8%;
     margin-left: 10px;
     /* border-radius:18px; */
     background-color:rgb(234,234,234);}
@@ -610,11 +610,12 @@ border: none
         transform: translateX(-5px); /* Lệch sang trái 5px khi hover vào */
       }
       .pp{
+        width: 176%;
         color: red;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 90px auto 410px auto;
+        margin: 236px 203px;
       }
 /* >=992 => Desktop 
 <992px và >=768px => Tablet
@@ -628,7 +629,7 @@ border: none
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 165px auto 557px 75px;}
+   margin: 166px auto 557px 127px;}
   .flexgmap{
     position: relative;
     left: 3%;
@@ -1235,7 +1236,7 @@ font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 225px auto 653px 50px;}
+    margin: 225px auto 801px 50px;}
   .iframe {
     margin-bottom: 100px;
     margin-left: 55px;
