@@ -28,7 +28,7 @@ class Active extends Component {
       borderRadius: "15px",
       margin: "10px 0",
       padding: "10px",
-      backgroundColor: "rgb(118, 74, 188)",
+      backgroundColor: " #0047b3",
       color: "white",
       border: "none",
       width: "100%",
