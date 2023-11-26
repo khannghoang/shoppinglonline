@@ -51,7 +51,7 @@ class ProductDetail extends Component {
                     <tr>
                       <td align="right">Description:</td>
                         <td style={font2}>
-                       <div className="description-container">
+                       <div className="">
                         {prod.description}
                        </div>
                        </td>
