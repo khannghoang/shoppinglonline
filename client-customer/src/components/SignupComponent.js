@@ -34,7 +34,7 @@ class Signup extends Component {
       borderRadius: "15px",
       margin: "10px 0",
       padding: "10px",
-      backgroundColor: "rgb(118, 74, 188)",
+      backgroundColor: "#0047b3",
       color: "white",
       border: "none",
       width: "100%",
@@ -49,7 +49,7 @@ class Signup extends Component {
         fontSize:"25px"
       }
     return (
-      <div className="align-centerr cardStyleforsignup scroll-animation">
+      <div className="align-centerr cardStyle scroll-animation">
         <h2 style={move2} className="text-center">SIGN-UP</h2>
         <form>
           <table style={move} className="align-centerr signup scroll-animation2">
