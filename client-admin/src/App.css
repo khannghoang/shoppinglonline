@@ -1,23 +1,26 @@
 /* styles.css */
 
+
 .body-customer {
-  width: 1150px;
+  width: fit-content;
   height: fit-content;
   margin: 0px auto;
  
 }
+
 .body-admin {
-  width: fit-content;
+  width:fit-content;
   height: fit-content;
   margin: 0px auto;
+}
+.image{
+  margin: 0 310px;
 }
 .but{
   background-color: #fee6e3;
   border: 2px solid #111;
   border-radius: 8px;
-  
   color: #111;
-
 }
 .but{
   box-shadow: #0b042a 2px 2px 0 0;
@@ -27,7 +30,6 @@
   transition: all 0.5s;
   box-shadow: #ffffff 2px 2px 0 0;
   transform: translate(2px, 2px);
-
 }
 .hoverr{
   font-weight: 500;
