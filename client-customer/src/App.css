@@ -645,7 +645,7 @@ border: none
     background-color: #0047b3;
     color: white;
     border: none;
-    width: 65%;
+    width: 100%;
     cursor: pointer;
     text-align: center;
    }
@@ -889,7 +889,7 @@ display: none;  }
   margin-right: 20px;
  }
  div .menurespon2{
-    width: 106% ;
+    width: 107% ;
   }
   .menu-toggle{
     display: block;
@@ -1007,7 +1007,7 @@ display: none;  }
   margin-right: 20px;
  }
  .mySwiper{
-  width: 100%;
+  width: 104%;
     height: 250px;
   margin:4% auto;
   margin-bottom: 5%;
@@ -1347,7 +1347,7 @@ font-size: 15px;
     top: 0;
     bottom: 0;
     z-index: 10;
-    background: black;
+    background: #282828;
     translate:-100%;
     transition: translate 0.4s ease;
     z-index: 1;
@@ -1457,7 +1457,7 @@ font-size: 15px;
   margin-right: 20px;
  }
  div .menurespon2{
-    width: 111% ;
+    width: 114% ;
   }
   .menu-toggle{
     display: block;
