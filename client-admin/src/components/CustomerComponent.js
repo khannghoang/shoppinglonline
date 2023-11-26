@@ -204,7 +204,7 @@ const tableRow = {
       if (result) {
         this.apiGetCustomers();
       } else {
-        alert('SORRY BABY!');
+        alert('KHÔNG THÀNH CÔNG!');
       }
     });
   }
