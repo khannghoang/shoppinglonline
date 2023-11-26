@@ -11,7 +11,7 @@ display: 'flex',
 backgroundColor: '#eaeaea',
 padding: '10px',
 listStyleType: 'none',
-width: '1400px', // make the menu have a fixed length
+width: '100%', // make the menu have a fixed length
 };
 
 const removemark = {
