@@ -22,7 +22,7 @@ class CategoryDetail extends Component {
       margin: "0 auto",
       boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
       marginTop:"20px",
-      height:"390px",
+      height:"569px",
   
     }
     const detail={
@@ -92,7 +92,7 @@ class CategoryDetail extends Component {
       const cate = { name: name };
       this.apiPostCategory(cate);
     } else {
-      alert('Please input name');
+      alert('Vui lòng nhập tên sách');
     }
   }
    // event-handlers
@@ -104,13 +104,13 @@ class CategoryDetail extends Component {
       const cate = { name: name };
       this.apiPutCategory(id, cate);
     } else {
-      alert('Please input id and name');
+      alert('Vui lòng chọn id và tên sách');
     }
   }
     // event-handlers
     btnDeleteClick(e) {
       e.preventDefault();
-      if (window.confirm('ARE YOU SURE?')) {
+      if (window.confirm('BẠN CHẮC CHẮN MUỐN XÓA?')) {
         const id = this.state.txtID;
         if (id) {
           this.apiDeleteCategory(id);
@@ -125,10 +125,10 @@ class CategoryDetail extends Component {
     axios.post('/api/admin/categories', cate, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('THÊM THÀNH CÔNG!');
         this.apiGetCategories();
       } else {
-        alert('SORRY BABY!');
+        alert('THÊM KHÔNG THÀNH CÔNG!');
       }
     });
   }
@@ -138,10 +138,10 @@ class CategoryDetail extends Component {
     axios.put('/api/admin/categories/' + id, cate, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('CẬP NHẬT THÀNH CÔNG!');
         this.apiGetCategories();
       } else {
-        alert('SORRY BABY!');
+        alert('CẬP NHẬT KHÔNG THÀNH CÔNG!');
       }
     });
   }
@@ -151,10 +151,10 @@ class CategoryDetail extends Component {
     axios.delete('/api/admin/categories/' + id, config).then((res) => {
       const result = res.data;
       if (result) {
-        alert('OK BABY!');
+        alert('XÓA THÀNH CÔNG');
         this.apiGetCategories();
       } else {
-        alert('SORRY BABY!');
+        alert('XÓA KHÔNG THÀNH CÔNG');
       }
     });
   }
