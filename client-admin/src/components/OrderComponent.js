@@ -149,7 +149,7 @@ const full1 ={
       if (result) {
         this.apiGetOrders();
       } else {
-        alert('SORRY BABY!');
+        alert('KHÔNG THÀNH CÔNG!');
       }
     });
   }
