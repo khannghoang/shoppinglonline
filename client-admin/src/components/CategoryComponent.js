@@ -33,7 +33,7 @@ class Category extends Component {
       margin: "0 auto",
       boxShadow: "0px 0px 10px 2px rgba(0,0,0,0.1)",
       marginTop:"20px",
-      height:"370px"
+      height:"550px"
     }
     const table={
       border:" 1px solid #fff",
