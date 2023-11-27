@@ -25,7 +25,7 @@ class ProductDetail extends Component {
     if (prod != null) {
       return (
         <div  className="align-center fullboxdetail scroll-animation">
-          <h2 className="text-centerr detailrespon truncate-text scroll-animation2">PRODUCT DETAILS</h2>
+          <h2 className="text-centerr scroll-animation2">CHI TIẾT SẢN PHẨM</h2>
           <figure className="caption-right scroll-animation2">
             <img className='imagedetailrespon' src={"data:image/jpg;base64," + prod.image} width="400px" height="400px" alt="" />
             <figcaption className='figurerespon '>
@@ -62,7 +62,7 @@ class ProductDetail extends Component {
                     </tr>
                     <tr >
                       <td></td>
-                      <td><input className='but buttonStyle' type="submit" value="ADD TO CART" onClick={(e) => this.btnAdd2CartClick(e)}   /></td>
+                      <td><input className='but buttonStyle' type="submit" value="THÊM VÀO GIỎ" onClick={(e) => this.btnAdd2CartClick(e)}   /></td>
                     </tr>
                   </tbody>
                 </table>
@@ -96,7 +96,7 @@ class ProductDetail extends Component {
       this.context.setMycart(mycart);
       alert('Thêm giỏ hàng thành công');
     } else {
-      alert('Hãy nhập số lượng');
+      alert('Hãy chọn số lượng');
     }
   }
   // apis
